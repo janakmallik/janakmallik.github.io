@@ -58,9 +58,30 @@ a:active { text-decoration: none; }
 							
                                     .grid-item2 {
 
+									
                                       background-color: #535253;
                                       padding: 20px;
                                     }
+
+									.grid-item2 h3{
+										text-align: center;
+										margin-bottom: 15px;
+
+									  }
+
+									  .grid-item2 img{
+										text-align: center;
+										width: 70%;
+
+									  }
+
+
+
+									  .grid-item2 p{
+										
+										margin-top: 10px;
+
+									  }
 
 									.grid-item {
 
