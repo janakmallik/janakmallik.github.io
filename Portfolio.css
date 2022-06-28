@@ -50,11 +50,17 @@ a:active { text-decoration: none; }
                                       
                                     }
                                     
-                                    .grid-item {
+                                    .grid-item2 {
 
-                                      
+                                      background-color: #535253;
                                       padding: 20px;
                                     }
+
+									.grid-item {
+
+                                      
+										padding: 20px;
+									  }
                                     
                                     .item1 {
                                       grid-column: 1 / span 3;
