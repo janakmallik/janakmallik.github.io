@@ -1,17 +1,16 @@
 
       .banner-image {
-
-        background-image: url('img/bg2.jpg');
+		background-color: black;
         background-size: cover;
         }
 
 
         .janak-image{
-          max-width:40%;
+          max-width:50%;
           margin-left:20px;
         }
         .janak-image2{
-          max-width:80%;
+          max-width:60%;
           margin-left:20px;
         }
 
