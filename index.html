@@ -1,388 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="Portfolio.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="Portfolio.css" />
     <title>Janak Mallik</title>
-    <link rel="icon" type="image/x-icon" href="img/jm12.jpg">
-
-    <style>
-
-    </style>
-</head>
-<body>
-<!------------nav bar------------->
-<div class="container">
-  
-<nav class="navbar navbar-expand-sm bg-light bg-dark navbar-dark fixed-top">
-  <div class="container-md">
-    <a class="navbar-brand" href="#home">Janak Mallik</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <link rel="icon" type="image/x-icon" href="img/jm12.jpg" />
+    <link rel="stylesheet" href="css/scroll_to_top.css" />
+    <style></style>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="scroll_to_top_btn" title="Go to top">
+      <i class="fa-solid fa-angles-up"></i>
     </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#AboutMe">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#MySkills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#ContactMe">Contact Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://twitter.com/janakmallik" target="_blank">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.instagram.com/janakmallik2/" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.linkedin.com/in/janakmallik/" target="_blank">
-                <i class="fab fa-linkedin"></i>
-              </a>
-        </li>
-      </ul>
+
+    <!------------nav bar------------->
+    <div class="container">
+      <nav
+        class="navbar navbar-expand-sm bg-light bg-dark navbar-dark fixed-top"
+      >
+        <div class="container-md">
+          <a class="navbar-brand" href="#home">Janak Mallik</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#AboutMe">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#MySkills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ContactMe">Contact Me</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://twitter.com/janakmallik"
+                  target="_blank"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.instagram.com/janakmallik2/"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.linkedin.com/in/janakmallik/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-  </div>
-</nav>
 
-</div>
+    <div
+      class="banner-image w-100 vh-100 d-flex justify-conent-center align-items-center my-5 py-5"
+      id="home"
+    >
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
+          <div class="col">
+            <img
+              src="img/jm12.jpg"
+              class="img-fluid rounded-circle mx-auto d-block mb-3"
+              style="max-width: 50%"
+              alt="Janak Mallik"
+            />
+          </div>
 
-<div class="banner-image w-100 vh-100 d-flex justify-conent-center align-items-center" id="home">
+          <div class="col">
+            <div class="ms-3">
+              <h1 class="text-white display-4 font-weight-bold">
+                Hi, My name is Janak Mallik
+              </h1>
+              <h3 class="text-white mb-4">
+                I am a programmer, designer and can make strategy for your
+                business.
+              </h3>
 
-  <div class="janak2" style="width: 50%">
-  <img src="img/jm12.jpg" class="janak-image img-fluid rounded-circle mx-auto d-block" alt="Janak Mallik">
-  </div>
-  <div class="content m-5" style="width: 60%">
-    <h1 class="text-white display-4 font-weight-bold">Hi, My name is Janak Mallik</h1>
-    <h3 class="text-white">I am a programmer, designer and can make strategy for your business.</h3>
-    <h3 class="text-white">
-      <br>Dowload My Resume
-      <!---buttons--> <a class="btn btn-primary btn-sm " style="font-size: 70%;" href="img/JANAK_MALLIK_resume.pdf" role="button" download>here</a>
+              <section class="">
+                <!-- Facebook -->
+                <a
+                  class="home_sc_link"
+                  href="https://www.facebook.com/janakmallik7/"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f sc_bd"></i
+                ></a>
 
-    </h3>
-<!--------------------------------extra ------------------icon links-->
-<div class="container pt-4">
-  <!-- Section: Social media -->
-  <section>
-    <!-- Facebook -->
-    <a
-      class="btn btn-lg btn-outline-primary text-white m-1" 
-      href="https://www.facebook.com/janakmallik7/"
-      target="_blank"
-      ><i class="fab fa-facebook-f"></i
-    ></a>
+                <!-- Twitter -->
+                <a
+                  class="home_sc_link"
+                  href="https://twitter.com/janakmallik"
+                  target="_blank"
+                  ><i class="fab fa-twitter sc_bd"></i
+                ></a>
 
-    <!-- Twitter -->
-    <a
-      class="btn btn-lg btn-outline-primary text-white m-1"
-      href="https://twitter.com/janakmallik"
-      target="_blank"
-      
-      data-mdb-ripple-color="dark"
-      ><i class="fab fa-twitter"></i
-    ></a>
+                <!-- youtube -->
+                <a
+                  class="home_sc_link"
+                  href="https://www.youtube.com/channel/UC5AiSFNKwSObHGmUqUkEqPQ"
+                  target="_blank"
+                  ><i class="fab fa-youtube sc_bd"></i
+                ></a>
 
-    <!-- youtube -->
-    <a
-      class="btn btn-lg btn-outline-primary text-white m-1"
-      href="https://www.youtube.com/channel/UC5AiSFNKwSObHGmUqUkEqPQ"
-      target="_blank"
-      
-      data-mdb-ripple-color="dark"
-      ><i class="fab fa-youtube"></i
-    ></a>
+                <!-- Instagram -->
+                <a
+                  class="home_sc_link"
+                  href="https://www.instagram.com/janakmallik2/"
+                  target="_blank"
+                  ><i class="fab fa-instagram sc_bd"></i
+                ></a>
 
-    <!-- Instagram -->
-    <a
-      class="btn btn-lg btn-outline-primary text-white m-1"
-      href="https://www.instagram.com/janakmallik2/"
-      target="_blank"
-      
-      data-mdb-ripple-color="dark"
-      ><i class="fab fa-instagram"></i
-    ></a>
+                <!-- Linkedin -->
+                <a
+                  class="home_sc_link"
+                  href="https://www.linkedin.com/in/janakmallik/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin sc_bd"></i
+                ></a>
+                <!-- Github -->
+                <a
+                  class="home_sc_link"
+                  href="https://github.com/janakmallik"
+                  target="_blank"
+                  ><i class="fab fa-github sc_bd"></i
+                ></a>
+              </section>
 
-    <!-- Linkedin -->
-    <a
-      class="btn btn-lg btn-outline-primary text-white m-1"
-      href="https://www.linkedin.com/in/janakmallik/"
-      target="_blank"
-      
-      data-mdb-ripple-color="dark"
-      ><i class="fab fa-linkedin"></i
-    ></a>
-    <!-- Github -->
-    <a
-      class="btn btn-lg btn-outline-primary text-white m-1"
-      href="https://github.com/janakmallik"
-      target="_blank"
-      
-      data-mdb-ripple-color="dark"
-      ><i class="fab fa-github"></i
-    ></a>
-  </section>
-  <!-- Section: Social media -->
-</div>
-
-  </div>
-</div>
-<!-------------------about me page ----------------------------*******************************************--->
-<div class="w-100 vh-100 d-flex justify-conent-center align-items-center" id="AboutMe">
-  <div class="janak2" style="width: 65%">
-    <img src="img/jm4.jpeg" class="janak-image2" alt="Janak Mallik">
-    </div>
-  <div class="content m-5">
-    <h1 class="text-black display-3">About Me</h1>
-    <h5 class="text-black" style="margin-bottom: 30px;">My name is janak mallik, currently studying at Ahsanullah University of Science and Technology in Computer Science & Engineering at 3rd year 1st semester, Very satisfied by studying here. 
-      Also learning design and programming from various courses. I am a happy, calm and peaceful person who is always excited trying new things.
-    </h5>
-
-    <!----------------------------------pills-------------------------->
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Education</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Interests</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Achievements</button>
-      </li>
-    </ul>
-    <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-        <dl>
-          <dt>B.Sc. in CSE 2022*(on going)</dt>
-          <dd>Ahsanullah University of Science and Technology, Dhaka.
-            [3rd year 1st semester]</dd>
-          <dt>HSC 2019</dt>
-          <dd>Amrita Lal Dey College, Barisal.</dd>
-          <dt>SSC 2016</dt>
-          <dd>Jhalokhathi Govt. High School, Jhalokhathi.</dd>
-        </dl>
-      </div>
-      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-        <dl>
-          <dt>Game Development</dt>
-          <dt>CPU Architecture</dt>
-          <dt>Photography</dt>
-          <dt>FrontEnd Web</dt>
-          <dt>Graphics Designing</dt>
-          <dt>Android App Development</dt>
-        </dl>
-      </div>
-      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-        <dl>
-          <dt>Champion in AUST Intra Valorant Cup</dt>
-          <dt>Runners Up in AUST CSE Championship Spring-2020</dt>
-          <dt>Champion in AUST CSE Championship Fall-2020</dt>
-        </dl>
+              <h3 class="text-white">
+                <br />My Resume
+                <a href="img/JANAK_MALLIK_resume.pdf" role="button" download
+                  ><button class="ms-2" id="dw_pdf">
+                    <i class="fa-solid fa-download"></i> Dowload
+                  </button></a
+                >
+              </h3>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+    <!-------------------about me page ----------------------------*******************************************--->
+    <div
+      class="w-100 vh-100 d-flex justify-conent-center align-items-center"
+      id="AboutMe"
+    >
+      <div class="janak2" style="width: 65%">
+        <img src="img/jm4.jpeg" class="janak-image2" alt="Janak Mallik" />
+      </div>
+      <div class="content m-5">
+        <h1 class="text-black display-3">About Me</h1>
+        <h5 class="text-black" style="margin-bottom: 30px">
+          My name is janak mallik, currently studying at Ahsanullah University
+          of Science and Technology in Computer Science & Engineering at 3rd
+          year 1st semester, Very satisfied by studying here. Also learning
+          design and programming from various courses. I am a happy, calm and
+          peaceful person who is always excited trying new things.
+        </h5>
 
-<!----------------------------experience------------------------->
-
-  <div class="skill bg-secondary text-white w-100 vh-100 d-flex justify-conent-center align-items-center" id="experience">
-
-    <div class="grid-container">
-    <div class="grid-item item1">
-      <h1 class="text-black display-3">My Experience</h1>
+        <!----------------------------------pills-------------------------->
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              Education
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              Interests
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-contact-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-contact"
+              type="button"
+              role="tab"
+              aria-controls="pills-contact"
+              aria-selected="false"
+            >
+              Achievements
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+          >
+            <dl>
+              <dt>B.Sc. in CSE 2022*(on going)</dt>
+              <dd>
+                Ahsanullah University of Science and Technology, Dhaka. [3rd
+                year 1st semester]
+              </dd>
+              <dt>HSC 2019</dt>
+              <dd>Amrita Lal Dey College, Barisal.</dd>
+              <dt>SSC 2016</dt>
+              <dd>Jhalokhathi Govt. High School, Jhalokhathi.</dd>
+            </dl>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+          >
+            <dl>
+              <dt>Game Development</dt>
+              <dt>CPU Architecture</dt>
+              <dt>Photography</dt>
+              <dt>FrontEnd Web</dt>
+              <dt>Graphics Designing</dt>
+              <dt>Android App Development</dt>
+            </dl>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-contact"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+          >
+            <dl>
+              <dt>Champion in AUST Intra Valorant Cup</dt>
+              <dt>Runners Up in AUST CSE Championship Spring-2020</dt>
+              <dt>Champion in AUST CSE Championship Fall-2020</dt>
+            </dl>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="grid-item">
-      <h3>Computer operator</h3>
-    <p style="font-size: 130%">I have many experience working as a computer operator</p>
+
+    <!----------------------------experience------------------------->
+
+    <div
+      class="skill bg-secondary text-white w-100 vh-100 d-flex justify-conent-center align-items-center"
+      id="experience"
+    >
+      <div class="container">
+        <div class="grid-item item1">
+          <h1 class="text-black display-3">My Experience</h1>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+          <div class="grid-item">
+            <!-- <div class="col"> -->
+            <h3>Computer operator</h3>
+            <p style="font-size: 130%">
+              I have many experience working as a computer operator
+            </p>
+          </div>
+          <div class="grid-item">
+            <h3>Software developing</h3>
+            <p style="font-size: 130%">
+              I developed sofware using android studio, java and i-graphics
+            </p>
+          </div>
+          <div class="grid-item">
+            <h3>Programming contest</h3>
+            <p style="font-size: 130%">
+              I am regularly participating at Codeforce Since 2020
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="grid-item">
-      <h3>Software developing</h3>
-      <p style="font-size: 130%">I developed sofware using android studio, java and i-graphics</p>
-    </div>  
-    <div class="grid-item">
-      <h3>Programming contest</h3>
-      <p style="font-size: 130%">I am regularly participating at Codeforce Since 2020</p>
+
+    <!-- <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+
+      </div>
+    </div> -->
+
+    <!---------------------------------skill page------------------------------------------>
+    <div
+      class="skill bg-dark text-white w-100 vh-100 d-flex justify-conent-center align-items-center"
+      id="MySkills"
+    >
+      <div class="grid-container">
+        <div class="grid-item iitem1">
+          <h1 class="text-black display-3">My Skills</h1>
+        </div>
+        <div class="grid-item"><h3 style="text-align: center">C/C++</h3></div>
+        <div class="grid-item"><h3 style="text-align: center">java</h3></div>
+        <div class="grid-item">
+          <h3 style="text-align: center">Latex Overleaf</h3>
+        </div>
+        <div class="grid-item">
+          <h3 style="text-align: center">MS Office</h3>
+        </div>
+        <div class="grid-item">
+          <h3 style="text-align: center">Bootstrap 5</h3>
+        </div>
+        <div class="grid-item">
+          <h3 style="text-align: center">Android SDK</h3>
+        </div>
+        <div class="grid-item"><h3 style="text-align: center">Css</h3></div>
+        <div class="grid-item"><h3 style="text-align: center">HTML</h3></div>
+        <div class="grid-item">
+          <h3 style="text-align: center">Google Workspace</h3>
+        </div>
+        <div class="grid-item"><h3 style="text-align: center">Adobe</h3></div>
+        <div class="grid-item">
+          <h3 style="text-align: center">DDL & DML</h3>
+        </div>
+        <div class="grid-item">
+          <h3 style="text-align: center">Assembly Language</h3>
+        </div>
+      </div>
     </div>
-  </div>
-  </div>
 
-  <!---------------------------------skill page------------------------------------------>
-  <div class="skill bg-dark text-white w-100 vh-100 d-flex justify-conent-center align-items-center" id="MySkills">
+    <!-------------------------------------------portfolio page--------------------------->
+    <div
+      class="skill bg-secondary text-white w-100 vh-100 d-flex justify-conent-center align-items-center"
+      id="portfolio"
+    >
+      <div class="grid-container">
+        <div class="grid-item item1">
+          <h1 class="text-black display-3">My Portfolio</h1>
+        </div>
+        <div class="grid-item2">
+          <h3>HEROS OF THE GALAXY</h3>
+          <img src="img/ins2.jpg" class="janak-image2 mx-auto d-block" />
+          <p style="font-size: 100%">
+            I have built a game named "HEROS OF THE GALAXY" using i-graphics and
+            C++ where a user can shoot enemies and objects and gain points which
+            is really a fun to play.<br />
+            More deatils is
+            <a
+              href="https://drive.google.com/drive/folders/1wiEWdTDihxs4wBOAosptIAlxe0kIrk-5?usp=sharing"
+              target="_blank"
+              >here.</a
+            >
+          </p>
+        </div>
+        <div class="grid-item2">
+          <h3>CHATMAPP</h3>
+          <img src="img/s3.jpg" class="janak-image2 mx-auto d-block" />
+          <p style="font-size: 100%">
+            I developed chat based software named "CHATMAPP" using java sdk
+            where users can create individual accounts to chat with other users
+            which is really helpfull for communication.<br />
+            More deatils is
+            <a
+              href="https://drive.google.com/file/d/1QqigWFrq2pbljYsOp_O2Wz0yn_B3X283/view?usp=sharing"
+              target="_blank"
+              >here.</a
+            >
+          </p>
+        </div>
+        <div class="grid-item2">
+          <h3>SHOPEASY</h3>
+          <img src="img/andP.jpg" class="janak-image2 mx-auto d-block" />
+          <p style="font-size: 100%">
+            I have built a androida app named "SHOPEASY" for shopping grocery
+            items from sellers which makes shopping easy and fast. Here a user
+            can create account to login for shopping indivdually.
 
-    <div class="grid-container ">
-      <div class="grid-item iitem1"><h1 class="text-black display-3">My Skills</h1></div>
-      <div class="grid-item "><h3 style="text-align: center">C/C++</h3></div>
-      <div class="grid-item "><h3 style="text-align: center">java</h3></div>  
-      <div class="grid-item "><h3 style="text-align: center">Latex Overleaf</h3></div>
-      <div class="grid-item "><h3 style="text-align: center">MS Office</h3></div>
-      <div class="grid-item "><h3 style="text-align: center">Bootstrap 5</h3></div>
-      <div class="grid-item "><h3 style="text-align: center">Android SDK</h3></div>
-      <div class="grid-item "><h3 style="text-align: center">Css</h3></div>  
-      <div class="grid-item "><h3 style="text-align: center">HTML</h3></div>
-      <div class="grid-item "><h3 style="text-align: center">Google Workspace</h3></div>
-      <div class="grid-item "><h3 style="text-align: center">Adobe</h3></div>
-      <div class="grid-item "><h3 style="text-align: center">DDL & DML</h3></div>
-      <div class="grid-item "><h3 style="text-align: center">Assembly Language</h3></div>
-  </div>
-  </div>
+            <br />More deatils is
+            <a
+              href="https://drive.google.com/drive/folders/1wiEWdTDihxs4wBOAosptIAlxe0kIrk-5?usp=sharing"
+              target="_blank"
+              >here.</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------------------------------------contacct me--------------->
 
-<!-------------------------------------------portfolio page--------------------------->
-<div class="skill bg-secondary text-white w-100 vh-100 d-flex justify-conent-center align-items-center" id="portfolio">
+    <div class="skill contact-wrap w-100 vh-100 d-flex" id="ContactMe">
+      <div class="contact-in">
+        <h1 class="text-black">Contact Info</h1>
+        <h2 class="text-black">
+          <i class="fa fa-phone" aria-hidden="true"></i> Phone
+        </h2>
+        <p>
+          <a href="tel:+8801793711207" class="text-white">+8801793711207</a>
+        </p>
+        <h2><i class="fa fa-envelope" aria-hidden="true"></i> Email</h2>
+        <p>
+          <a href="mailto:janaktoy@gmail.com" class="text-white"
+            >janaktoy@gmail.com</a
+          >
+        </p>
+        <h2><i class="fa fa-map-marker" aria-hidden="true"></i> Address</h2>
+        <p>
+          <a
+            href="https://goo.gl/maps/hC8DbDpbcXJeSxq37"
+            class="text-white"
+            target="_blank"
+            >Dhaka, Bangladesh</a
+          >
+        </p>
+      </div>
+      <div class="contact-in">
+        <h1>Send a Message</h1>
+        <form>
+          <input type="text" placeholder="Full Name" class="contact-in-input" />
+          <input type="text" placeholder="Email" class="contact-in-input" />
+          <input type="text" placeholder="Subject" class="contact-in-input" />
+          <textarea
+            placeholder="Message"
+            class="contact-in-textarea"
+          ></textarea>
+          <input type="submit" value="SUBMIT" class="contact-in-btn" />
+        </form>
+      </div>
+      <div class="contact-in">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116834.13673771221!2d90.41932575!3d23.780636450000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1656344175020!5m2!1sen!2sbd"
+          width="100%"
+          height="auto"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </div>
+    <!------------------------footer-------------------------------------->
+    <footer class="text-center text-white" style="background-color: #f1f1f1">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-2">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://www.facebook.com/janakmallik7/"
+            target="_blank"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
 
-  <div class="grid-container">
-  <div class="grid-item item1">
-    <h1 class="text-black display-3">My Portfolio</h1>
-  </div>
-  <div class="grid-item2">
-    <h3>HEROS OF THE GALAXY</h3>
-    <img src="img/ins2.jpg" class="janak-image2 mx-auto d-block">
-  <p style="font-size: 100%">I have built a game named "HEROS OF THE GALAXY" using i-graphics and C++ where a user can shoot enemies and objects and gain points which is really a fun to play.<br>
-  More deatils is <a href="https://drive.google.com/drive/folders/1wiEWdTDihxs4wBOAosptIAlxe0kIrk-5?usp=sharing" target="_blank">here.</a></p>
-  
-  </div>
-  <div class="grid-item2">
-    <h3>CHATMAPP</h3>
-    <img src="img/s3.jpg" class="janak-image2 mx-auto d-block">
-    <p style="font-size: 100%">I developed chat based software named "CHATMAPP" using java sdk where users can create individual accounts to chat with other users which is really helpfull for communication.<br>
-      More deatils is <a href="https://drive.google.com/file/d/1QqigWFrq2pbljYsOp_O2Wz0yn_B3X283/view?usp=sharing" target="_blank">here.</a></p>
-      
-  </div>  
-  <div class="grid-item2">
-    
-    <h3>SHOPEASY</h3>
-    <img src="img/andP.jpg" class="janak-image2 mx-auto d-block">
-    <p style="font-size: 100%">I have built a androida app named "SHOPEASY" for shopping grocery items from sellers which makes shopping easy and fast. Here a user can create account to login for shopping indivdually.
-    
-      <br>More deatils is <a href="https://drive.google.com/drive/folders/1wiEWdTDihxs4wBOAosptIAlxe0kIrk-5?usp=sharing" target="_blank">here.</a>
-      
+          <!-- Twitter -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://twitter.com/janakmallik"
+            target="_blank"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"></i
+          ></a>
 
-      </p>
-  </div>
-</div>
-</div>
-<!-------------------------------------------------------------contacct me--------------->
+          <!-- youtube -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://www.youtube.com/channel/UC5AiSFNKwSObHGmUqUkEqPQ"
+            target="_blank"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-youtube"></i
+          ></a>
 
-<div class="skill contact-wrap w-100 vh-100 d-flex" id="ContactMe">
-  <div class="contact-in">
-    <h1 class="text-black">Contact Info</h1>
-    <h2 class="text-black"><i class="fa fa-phone" aria-hidden="true"></i> Phone</h2>
-    <p><a href="tel:+8801793711207" class="text-white">+8801793711207</a></p>
-    <h2><i class="fa fa-envelope" aria-hidden="true"></i> Email</h2>
-    <p><a href="mailto:janaktoy@gmail.com" class="text-white">janaktoy@gmail.com</a></p>
-    <h2><i class="fa fa-map-marker" aria-hidden="true"></i> Address</h2>
-    <p><a href="https://goo.gl/maps/hC8DbDpbcXJeSxq37" class="text-white" target="_blank">Dhaka, Bangladesh</a></p>
-  </div>
-  <div class="contact-in">
-    <h1>Send a Message</h1>
-    <form>
-      <input type="text" placeholder="Full Name" class="contact-in-input">
-      <input type="text" placeholder="Email" class="contact-in-input">
-      <input type="text" placeholder="Subject" class="contact-in-input">
-      <textarea placeholder="Message" class="contact-in-textarea"></textarea>
-      <input type="submit" value="SUBMIT" class="contact-in-btn">
-    </form>
-  </div>
-  <div class="contact-in">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116834.13673771221!2d90.41932575!3d23.780636450000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1656344175020!5m2!1sen!2sbd" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-  </div>
-</div>
-<!------------------------footer-------------------------------------->
-<footer class="text-center text-white" style="background-color: #f1f1f1;">
-  <!-- Grid container -->
-  <div class="container pt-4">
-    <!-- Section: Social media -->
-    <section class="mb-2">
-      <!-- Facebook -->
-      <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="https://www.facebook.com/janakmallik7/"
-        target="_blank"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-facebook-f"></i
-      ></a>
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://www.instagram.com/janakmallik2/"
+            target="_blank"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+          ></a>
 
-      <!-- Twitter -->
-      <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="https://twitter.com/janakmallik"
-        target="_blank"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-twitter"></i
-      ></a>
+          <!-- Linkedin -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://www.linkedin.com/in/janakmallik/"
+            target="_blank"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://github.com/janakmallik"
+            target="_blank"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Copyright -->
+      <div
+        class="text-center text-dark p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        © 2020 Copyright:
+        <a
+          class="text-dark"
+          target="_blank"
+          href="https://sites.google.com/view/janakmallik"
+          >Janak Mallik</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
 
-      <!-- youtube -->
-      <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="https://www.youtube.com/channel/UC5AiSFNKwSObHGmUqUkEqPQ"
-        target="_blank"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-youtube"></i
-      ></a>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
 
-      <!-- Instagram -->
-      <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="https://www.instagram.com/janakmallik2/"
-        target="_blank"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-instagram"></i
-      ></a>
-
-      <!-- Linkedin -->
-      <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="https://www.linkedin.com/in/janakmallik/"
-        target="_blank"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-linkedin"></i
-      ></a>
-      <!-- Github -->
-      <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="https://github.com/janakmallik"
-        target="_blank"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-github"></i
-      ></a>
-    </section>
-    <!-- Section: Social media -->
-  </div>
-  <!-- Copyright -->
-  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2020 Copyright:
-    <a class="text-dark" target="_blank" href="https://sites.google.com/view/janakmallik">Janak Mallik</a>
-  </div>
-  <!-- Copyright -->
-</footer>
-
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
-</body>
+    <script src="js/function.js"></script>
+  </body>
 </html>
