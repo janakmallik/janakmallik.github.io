@@ -58,6 +58,10 @@ a:active {
   justify-items: center;
 }
 
+.skill p {
+margin-bottom: 40px;
+}
+
 .grid-item2 {
   background-color: #535253;
   padding: 20px;
@@ -100,18 +104,18 @@ a:active {
 }
 
 .contact-in:nth-child(1) {
-  flex: 30%;
+  /* flex: 30%; */
   background: #535253;
   color: rgb(255, 255, 255);
 }
 
 .contact-in:nth-child(2) {
-  flex: 45%;
+  /* flex: 45%; */
   background: #535253;
 }
 
 .contact-in:nth-child(3) {
-  flex: 25%;
+  /* flex: 25%; */
   padding: 0;
 }
 
