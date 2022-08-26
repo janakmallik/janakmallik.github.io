@@ -33,6 +33,7 @@
     <title>Janak Mallik</title>
     <link rel="icon" type="image/x-icon" href="img/jm12.jpg" />
     <link rel="stylesheet" href="css/scroll_to_top.css" />
+    <link rel="stylesheet" href="css/pop_up.css" />
     <style></style>
   </head>
   <body>
@@ -567,6 +568,67 @@
     </div>
     </div>
     </div>
+
+
+    <!-- Vertically centered modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" >
+    <div class="modal-content" style="background:#F18B12;">
+
+      <div class="modal-body">
+        
+        <div class=" text-end" style="height: 10px;">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="row">
+          <div class="col-5 ms-auto">
+
+                <img class="" src="img/pngwing.com.png" style="width: 190px;">
+
+          </div>
+
+          <div class="col-7">
+            <h2 class="text-capitalize fw-bold pt-3 my-2 " style="color: #dd1924; letter-spacing: 2px;">
+              happy durga puja 2022
+            </h2>
+            <p class="text-white text-wrap pe-2" style="text-align: justify; font-weight: 350; line-height: 1.4rem;" >
+              May Maa Durga shows us the path to eternal peace, prosperity and empowers us with the light of knowledge and truth.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="popup">
+
+  <div class="contentBox">
+<div class="close">
+  
+</div>
+    <div class="imgBx">
+      <img src="img/pngwing.com.png">
+    </div>
+    <div class="content">
+      <div>
+        <h2 class="text-capitalize">
+          happy durga puja
+        </h2>
+        <p>
+          May Maa Durga shows us the path to eternal peace, prosperity and
+          protects us and our family from the evil and empowers us with the light of knowledge and truth.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div> -->
     <!------------------------footer-------------------------------------->
     <footer class="text-center text-white " style="background-color: #f1f1f1">
       <!-- Grid container -->
@@ -661,6 +723,18 @@
       crossorigin="anonymous"
     ></script>
 
+    <script>
+        var myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
+        myModal.toggle();
+    </script>
+
     <script src="js/function.js"></script>
+
+    <!-- <script type="text/javascript">
+      $(window).on('load', function() {
+          $('#myModal').modal('show');
+      });
+  </script> -->
+
   </body>
 </html>
