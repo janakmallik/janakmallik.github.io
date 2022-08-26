@@ -77,3 +77,9 @@
     background: rgb(226, 230, 38);
     border-radius: 50%;
 }
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+ 
