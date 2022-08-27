@@ -115,6 +115,12 @@
       </nav>
     </div>
 
+    <!-- <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+      </div>
+    </nav> -->
+
     <div
       class="banner-image w-100 vh-100 d-flex justify-conent-center align-items-center my-5 py-5"
       id="home"
@@ -131,6 +137,13 @@
             </TEXT>
           </marquee>
         </div> -->
+
+        <div class="d-flex justify-content-center my-5">
+          <h5><span class="tm_bg badge bg-secondary me-1" id="demo_tt12">time now</span></h5>
+          <!-- <span class="badge bg-secondary me-1" id="demo_tt12">Secondary</span> -->
+          <h5><span class="tm_bg badge bg-secondary ms-1" id="demo_xx">date today</span></h5>
+          <!-- <span class="badge bg-secondary ms-1" id="demo_xx">Secondary</span> -->
+        </div>
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
           <div class="col">
@@ -831,13 +844,15 @@
       crossorigin="anonymous"
     ></script>
 
+
+
     <script>
       var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
       myModal.toggle();
     </script>
 
     <script src="js/function.js"></script>
-
+    <script src="js/time.js"></script>
     <!-- <script type="text/javascript">
       $(window).on('load', function() {
           $('#myModal').modal('show');

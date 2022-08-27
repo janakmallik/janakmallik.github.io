@@ -83,3 +83,9 @@
     box-shadow: none;
  }
  
+
+
+ .tm_bg:hover{
+    font-size: 20px;
+    transition: 0.3s;
+ }
