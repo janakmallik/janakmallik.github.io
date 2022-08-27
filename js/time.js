@@ -6,25 +6,27 @@
 
       function startTime() {
         const today = new Date();
-        // let h = today.getHours();
-        // let m = today.getMinutes();
-        // let s = today.getSeconds();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
 
-        //var dy = new Date();
-        var dy = new Date((new Date().setHours(new Date().getHours() - (new Date().getTimezoneOffset() / 60)))).toISOString();
+        var dy = new Date();
+        // new Date((new Date().setHours(new Date().getHours() - (new Date().getTimezoneOffset() / 60)))).toISOString()
 
         //var tz = dy.toString().split("GMT")[1];
-        var n = dy.toLocaleString([], { hour: "2-digit", minute: "2-digit" });
-        document.getElementById("demo_tt12").innerHTML = dy;
+        // var n = dy.toLocaleString([], { hour: "2-digit", minute: "2-digit" });
+        // document.getElementById("demo_tt12").innerHTML = n;
 
-        // var nn = dy.toLocaleString([], { hour: "2-digit", minute: "2-digit" });
-        // document.getElementById("time_l").innerHTML = nn;
-        // m = checkTime(m);
-        // s = checkTime(s);
+        var nn = dy.toLocaleString([], { hour: "2-digit", minute: "2-digit" });
+
+        document.getElementById("demo_tt12").innerHTML = nn;
+
+        m = checkTime(m);
+        s = checkTime(s);
         // document.getElementById("txt").innerHTML = h + ":" + m + ":" + s;
         setTimeout(startTime, 1000);
       };
-      console.log(startTime());
+      //console.log(startTime());
             // console.log(dy);
 
       
