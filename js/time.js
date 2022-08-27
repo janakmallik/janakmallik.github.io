@@ -10,9 +10,12 @@
         // let m = today.getMinutes();
         // let s = today.getSeconds();
 
-        var dy = new Date();
+        //var dy = new Date();
+        var dy = new Date((new Date().setHours(new Date().getHours() - (new Date().getTimezoneOffset() / 60)))).toISOString();
+
+        //var tz = dy.toString().split("GMT")[1];
         var n = dy.toLocaleString([], { hour: "2-digit", minute: "2-digit" });
-        document.getElementById("demo_tt12").innerHTML = n;
+        document.getElementById("demo_tt12").innerHTML = dy;
 
         // var nn = dy.toLocaleString([], { hour: "2-digit", minute: "2-digit" });
         // document.getElementById("time_l").innerHTML = nn;
@@ -21,7 +24,10 @@
         // document.getElementById("txt").innerHTML = h + ":" + m + ":" + s;
         setTimeout(startTime, 1000);
       };
+      console.log(startTime());
+            // console.log(dy);
 
+      
       //   function checkTime(i) {
       //     if (i < 10) {
       //       i = "0" + i;
