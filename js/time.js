@@ -6,9 +6,9 @@
 
       function startTime() {
         const today = new Date();
-        let h = today.getHours();
-        let m = today.getMinutes();
-        let s = today.getSeconds();
+        // let h = today.getHours();
+        // let m = today.getMinutes();
+        // let s = today.getSeconds();
 
         var dy = new Date();
         // new Date((new Date().setHours(new Date().getHours() - (new Date().getTimezoneOffset() / 60)))).toISOString()
@@ -17,13 +17,17 @@
         // var n = dy.toLocaleString([], { hour: "2-digit", minute: "2-digit" });
         // document.getElementById("demo_tt12").innerHTML = n;
 
-        var nn = dy.toLocaleString([], { hour: "2-digit", minute: "2-digit" });
 
+
+
+        // document.getElementById("demo_tt12").innerHTML = h + ":" + m + ":" + s;
+
+        var nn = dy.toLocaleString([], { hour: "2-digit", minute: "2-digit" });
         document.getElementById("demo_tt12").innerHTML = nn;
 
-        m = checkTime(m);
-        s = checkTime(s);
-        // document.getElementById("txt").innerHTML = h + ":" + m + ":" + s;
+        // m = checkTime(m);
+        // s = checkTime(s);
+
         setTimeout(startTime, 1000);
       };
       //console.log(startTime());
