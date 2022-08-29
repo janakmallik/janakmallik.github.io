@@ -85,7 +85,13 @@
  
 
 
- .tm_bg:hover{
+ /* .tm_bg:hover{
     font-size: 20px;
     transition: 0.3s;
+ } */
+
+  .tm_bg {
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: rgb(185, 0, 0);
  }

@@ -23,6 +23,18 @@
     <!-- <script src="js/html_include.js"></script> -->
 
     <style></style>
+    <style>
+      .blink {
+          animation: blinker 1.5s linear infinite;
+          color: red;
+          font-family: sans-serif;
+      }
+      @keyframes blinker {
+          50% {
+              opacity: 0;
+          }
+      }
+  </style>
   </head>
 
   <body>
@@ -116,23 +128,29 @@
       </div>
     </nav> -->
 
-    <div class="banner-image w-100 vh-100 d-flex justify-conent-center align-items-center my-5 py-5" id="home">
+    <!-- w-100 vh-100 -->
+    <div class="banner-image min-vh-100 d-flex justify-conent-center align-items-center mb-5 py-5" id="home">
       <div class="container">
         <!-- scroll bar alert  -->
-
-        <!-- <div class="d-flex justify-content-center my-5">
-          <marquee class="" style="background-color: rgba(255, 255, 255, 0); width: 100%;">
-            <TEXT class="text-white fw-bold fs-5 font-monospace">
-              &lth5&gt<span class="text-danger">this page is at developing state</span>&lt/h5&gt
+        <!-- d-flex justify-content-center -->
+        <div class="row mt-5 mb-4">
+          <!-- <div class="spinner-border text-danger me-1" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div> -->
+          <div class="co-12 text-center">
+            <TEXT class=" text-warning fw-bold fs-3 font-monospace blink">
+              <i class="text-center fa-solid fa-triangle-exclamation"></i>
             </TEXT>
-          </marquee>
-        </div> -->
+          </div>
 
-        <div class="d-flex justify-content-center my-5">
-          <h5><span class="tm_bg badge bg-secondary me-1" id="demo_tt12">time now</span></h5>
-          <!-- <span class="badge bg-secondary me-1" id="demo_tt12">Secondary</span> -->
-          <h5><span class="tm_bg badge bg-secondary ms-1" id="demo_xx">date today</span></h5>
-          <!-- <span class="badge bg-secondary ms-1" id="demo_xx">Secondary</span> -->
+          <div class="co-12 text-center">
+            <!-- w-auto w-sm-10 -->
+            <marquee class="" style="background-color: rgba(255, 255, 255, 0); max-width: 700px;">
+              <TEXT class="text-white fw-bold fs-5 font-monospace">
+                &lth5&gt<span class="text-danger">this page is at developing stage</span>&lt/h5&gt
+              </TEXT>
+            </marquee>
+          </div>
         </div>
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
@@ -152,15 +170,19 @@
 
               <p class="fs-4 text-white mb-4">I am a programmer, designer and can make strategy for your business.</p>
 
+              <!-- <section>
+                <script src="https://apis.google.com/js/platform.js"></script>
+                <div class="g-ytsubscribe" data-channelid="UC5AiSFNKwSObHGmUqUkEqPQ" data-layout="full" data-theme="dark" data-count="hidden"></div>
+              </section> -->
               <section class="">
                 <!-- Facebook -->
-                <a class="home_sc_link" href="https://www.facebook.com/janakmallik7/" target="_blank" style="margin-left: 0px"><i class="fab fa-facebook-f sc_bd"></i></a>
+                <a class="home_sc_link" href="https://www.facebook.com/janakmallik7/" target="_blank" style="margin-left: 0px"><i class="fab fa-facebook-f"></i></a>
 
                 <!-- Twitter -->
-                <a class="home_sc_link" href="https://twitter.com/janakmallik" target="_blank"><i class="fab fa-twitter sc_bd"></i></a>
+                <a class="home_sc_link" href="https://twitter.com/janakmallik" target="_blank"><i class="fab fa-twitter"></i></a>
 
                 <!-- youtube -->
-                <a class="home_sc_link" href="https://www.youtube.com/channel/UC5AiSFNKwSObHGmUqUkEqPQ" target="_blank"><i class="fab fa-youtube sc_bd"></i></a>
+                <a class="home_sc_link" href="https://www.youtube.com/channel/UC5AiSFNKwSObHGmUqUkEqPQ" target="_blank"><i class="fab fa-youtube"></i></a>
                 <!-- <script src="https://apis.google.com/js/platform.js"></script>
                 <div class="g-ytsubscribe home_sc_link" data-channelid="UC5AiSFNKwSObHGmUqUkEqPQ" data-layout="default" data-count="default"></div>
    -->
@@ -168,26 +190,44 @@
                 <div class="g-ytsubscribe" data-channelid="UC5AiSFNKwSObHGmUqUkEqPQ" data-layout="full" data-count="default"></div> -->
 
                 <!-- Instagram -->
-                <a class="home_sc_link" href="https://www.instagram.com/janakmallik2/" target="_blank"><i class="fab fa-instagram sc_bd"></i></a>
+                <a class="home_sc_link" href="https://www.instagram.com/janakmallik2/" target="_blank"><i class="fab fa-instagram"></i></a>
 
                 <!-- Linkedin -->
-                <a class="home_sc_link" href="https://www.linkedin.com/in/janakmallik/" target="_blank"><i class="fab fa-linkedin sc_bd"></i></a>
+                <a class="home_sc_link" href="https://www.linkedin.com/in/janakmallik/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <!-- Github -->
-                <a class="home_sc_link" href="https://github.com/janakmallik" target="_blank" style="margin-right: 0px"><i class="fab fa-github sc_bd"></i></a>
-              </section>
+                <a class="home_sc_link" href="https://github.com/janakmallik" target="_blank"><i class="fab fa-github"></i></a>
+                <!-- style="margin-right: 0px" -->
+
+                <!-- <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+                <script type="IN/FollowCompany" data-id="janakmallik" data-counter="bottom"></script> -->
+
+                <!-- youtube embaded  -->
+                <!-- <script src="https://apis.google.com/js/platform.js"></script>
+                <div class="g-ytsubscribe" data-channelid="UC5AiSFNKwSObHGmUqUkEqPQ" data-layout="full" data-theme="dark" data-count="hidden"></div>
+              </section> -->
 
               <h3 class="text-white">
                 <br />My Resume
-                <a href="img/JANAK_MALLIK_resume.pdf" role="button" download
-                  ><button class="ms-2" id="dw_pdf"><i class="fa-solid fa-download"></i> Dowload</button></a
-                >
+                <a href="img/JANAK_MALLIK_resume.pdf" role="button" download>
+                  <button class="ms-2" id="dw_pdf"><i class="fa-solid fa-file-arrow-down"></i> Download</button>
+                </a>
               </h3>
             </div>
           </div>
         </div>
+        <!-- time and date  -->
+        <div class="d-flex justify-content-center my-5">
+          <h5><span class="tm_bg badge  me-1" id="demo_tt12">time now</span></h5>
+
+          <h5><span class="tm_bg badge  ms-1" id="demo_xx">date today</span></h5>
+
+        </div>
       </div>
     </div>
 
+    <!-- <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="janakmallik" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://bd.linkedin.com/in/janakmallik?trk=profile-badge">janak mallik</a></div>
+                             -->
     <!-- embaded insta  -->
     <!-- <div class="container  py-5 my-5">
       <div class="embedsocial-hashtag" data-ref="83e4d03eea04fa99b2694f4e1f41720bdf694504"></div> <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script>
@@ -195,6 +235,14 @@
 
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div class="elfsight-app-72d6eabd-abd4-4a46-814b-6cb7b972da82"></div> -->
+
+<!-- <iframe style="height:300px; width:300px;" src="https://github.com/janakmallik">
+  <b>IFrame is unavailable here</b>
+  </iframe>
+  
+  <iframe style="height:300px; width:300px;" src="https://janakmallik.github.io">
+  <b>IFrame is unavailable here</b>
+  </iframe> -->
 
     <div class="container py-5 my-5" id="AboutMe">
       <!-- start div -->
