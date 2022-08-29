@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+</HEAD>
+<BODY>
+<SCRIPT>
+    // do text manipulation here
+    let string1 = 'test\r\n';
+    let string2 = 'export.';
+    
+    // assemble final string
+    const finalText = string1 + string2;
+    
+    // convert to blob
+    const data = new Blob([finalText], {type: 'text/plain'});
+    
+    // create file link
+    const link = document.createElement('a');
+    link.innerHTML = 'download';
+    link.setAttribute('download', 'data.txt');
+    link.href = window.URL.createObjectURL(data);
+    document.body.appendChild(link);
+    
+    // preview the output in a paragraph
+    const htmlBreak = string => {
+        return string.replace(/(?:\r\n|\r|\n)/g, '<br>');
+    }
+    const preview = document.createElement('p');
+    preview.innerHTML = htmlBreak(finalText);
+    preview.style.border = "1px solid black";
+    document.body.appendChild(preview);
+</SCRIPT>
+</BODY>
+</HTML>
