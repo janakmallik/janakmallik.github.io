@@ -69,20 +69,22 @@ a:active {
   margin-inline: 5px;
   margin-block: 5px;
   width: 370px;
+  height: 370px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   font-size: 15px;
   color: #f5f5f5;
-
 }
 
 .grid-item2:hover{
   width: 400px;
+  height: 400px;
   transition: .3s all;
   background-color: #918d91;
   color: #f5f5f5;
   font-size: 17px;
+  transform: translateY(-14px);
 }
 
 .grid-item2 h3 {
