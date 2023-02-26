@@ -119,11 +119,7 @@ button.night-mode:hover {
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
   #mode-button {
-    position: fixed;
-    padding: 0px;
-    bottom: 20px;
-    left: 0px;
-    /* z-index: 99; */
+    left: -250px;
   }
 }
 
