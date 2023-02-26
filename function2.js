@@ -13,3 +13,9 @@ function toggleMode() {
         button.innerHTML = "Night Mode";
     }
 }
+
+function toggleNavbar() {
+    var navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('show');
+  }
+  
