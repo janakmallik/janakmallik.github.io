@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google-site-verification" content="0bGTLxbS7rRbn-Ew3X0BJVIP7k7NpDpm3ppii7WoS7k" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="this is a portfolio site of janak mallik includes necessary details." />
+    <!--     <meta name="og:title" property="og:title" content="portfolio of janak mallik."> -->
+    <!--     <meta name="twitter:card" content="portfolio of janak mallik."> -->
+    <!-- <meta name="google-site-verification" content="2MFWn2MPBIYEsxbbFwI4A2DbMHxpdNDGTqFkWDKTpIY" /> -->
+    <!--     <meta name="google-site-verification" content="0bGTLxbS7rRbn-Ew3X0BJVIP7k7NpDpm3ppii7WoS7k" /> -->
+
+    <!-- <meta http-equiv = "refresh" content ="0; url = not_accessible.html" /> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="Portfolio.css" />
+    <title>Janak Mallik</title>
+    <link rel="icon" type="image/x-icon" href="img/jm12.jpg" />
+    <link rel="stylesheet" href="css/scroll_to_top.css" />
+    <link rel="stylesheet" href="css/pop_up.css" />
+    <!-- <link rel="stylesheet" href="css/scrl_bar.css" /> -->
+
+    <!-- <script src="js/html_include.js"></script> -->
+
+    <style></style>
+    <style>
+      .blink {
+        animation: blinker 1.5s linear infinite;
+        color: red;
+        font-family: sans-serif;
+      }
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <button onclick="topFunction()" id="scroll_to_top_btn" title="Go to top">
+      <i class="fa-solid fa-angles-up"></i>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background: #f18b12">
+          <div class="modal-body">
+            <div class="text-end" style="height: 10px">
+              <button type="button" class="btn btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-5">
+                <img class="" src="img/pngwing.com.png" style="width: 190px; display: block; margin-left: auto; margin-right: auto" />
+              </div>
+
+              <div class="col-sm-7 text-center text-md-start">
+                <h2 class="text-capitalize fw-bold pt-3 my-2" style="color: #dd1924; letter-spacing: 2px">happy durga puja 2022</h2>
+                <p class="text-white text-wrap pe-2" style="text-align: justify; font-weight: 350; line-height: 1.4rem">May Maa Durga shows us the path to eternal peace, prosperity and empowers us with the light of knowledge and truth.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------nav bar------------->
+    <!------------nav bar------------->
+    <!------------nav bar------------->
+    <!------------nav bar------------->
+
+    <div class="container">
+      <nav class="navbar navbar-expand-sm bg-light bg-dark navbar-dark fixed-top">
+        <div class="container-md">
+          <a class="navbar-brand" href="#home">Janak Mallik</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#AboutMe">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#MySkills">Skills</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ContactMe">Contact Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/janakmallik" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/janakmallik2/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/janakmallik/" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+      </div>
+    </nav> -->
+
+    <!-- w-100 vh-100 -->
+    <div class="banner-image min-vh-100 d-flex justify-conent-center align-items-center mb-5 py-5" id="home">
+      <div class="container">
+        <!-- scroll bar alert  -->
+        <!-- d-flex justify-content-center -->
+        <div class="row mt-5 mb-4">
+          <!-- <div class="spinner-border text-danger me-1" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div> -->
+          <div class="co-12 text-center">
+            <TEXT class="text-warning fw-bold fs-3 font-monospace blink">
+              <i class="text-center fa-solid fa-triangle-exclamation"></i>
+            </TEXT>
+          </div>
+
+          <div class="co-12 text-center">
+            <!-- w-auto w-sm-10 -->
+            <marquee class="" style="background-color: rgba(255, 255, 255, 0); max-width: 700px">
+              <TEXT class="text-white fw-bold fs-5 font-monospace"> &lth5&gt<span class="text-danger">this page is at developing stage</span>&lt/h5&gt </TEXT>
+            </marquee>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
+          <div class="col">
+            <img src="img/jm12.jpg" class="img-fluid rounded-circle mx-auto d-block mb-3" style="max-width: 60%" alt="Janak Mallik" />
+          </div>
+
+          <div class="col">
+            <div class="ms-3 pt-3">
+              <h1 class="text-white fs-2 fw-bold" style="letter-spacing: 1px">Hi, My name is Janak Mallik</h1>
+
+              <section class="mt-2">
+                <a href="https://twitter.com/janakmallik?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @janakmallik</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </section>
+              <!-- <h1 class="display-1 text-white fw-bold">Display 4</h1> -->
+
+              <p class="fs-4 text-white mb-4">I am a programmer, designer and can make strategy for your business.</p>
+
+              <!-- <section>
+                <script src="https://apis.google.com/js/platform.js"></script>
+                <div class="g-ytsubscribe" data-channelid="UC5AiSFNKwSObHGmUqUkEqPQ" data-layout="full" data-theme="dark" data-count="hidden"></div>
+              </section> -->
+              <div class="row" style="max-width: 400px">
+                <div class="col home_sc_link">
+                  <!-- Facebook -->
+                  <a class="" href="https://www.facebook.com/janakmallik7/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+
+                <div class="col home_sc_link">
+                  <!-- Twitter -->
+                  <a class="" href="https://twitter.com/janakmallik" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+
+                <div class="col home_sc_link">
+                  <!-- youtube -->
+                  <a class="" href="https://www.youtube.com/channel/UC5AiSFNKwSObHGmUqUkEqPQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+
+                <div class="col home_sc_link">
+                  <!-- Instagram -->
+                  <a class="" href="https://www.instagram.com/janakmallik2/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <div class="col home_sc_link align-middle">
+                  <!-- Linkedin -->
+                  <a class="align-middle" href="https://www.linkedin.com/in/janakmallik/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+                <div class="col home_sc_link">
+                  <!-- Github -->
+                  <a class="" href="https://github.com/janakmallik " target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <span class="text-white fs-2 fw-bold" style="letter-spacing: 1px">My Resume</span>
+                <a href="img/JANAK_MALLIK_resume.pdf" role="button" download>
+                  <button class="ms-2 dw_btn"><span class="fs-6 text-capitalize" style="letter-spacing: 1px">Download</span></button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- time and date  -->
+        <div class="d-flex justify-content-center my-5">
+          <h5><span class="tm_bg badge me-1" id="demo_tt12">time now</span></h5>
+
+          <h5><span class="tm_bg badge ms-1" id="demo_xx">date today</span></h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="janakmallik" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://bd.linkedin.com/in/janakmallik?trk=profile-badge">janak mallik</a></div>
+                             -->
+    <!-- embaded insta  -->
+    <!-- <div class="container  py-5 my-5">
+      <div class="embedsocial-hashtag" data-ref="83e4d03eea04fa99b2694f4e1f41720bdf694504"></div> <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script>
+    </div>
+
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-72d6eabd-abd4-4a46-814b-6cb7b972da82"></div> -->
+
+    <!-- <iframe style="height:300px; width:300px;" src="https://github.com/janakmallik">
+  <b>IFrame is unavailable here</b>
+  </iframe>
+  
+  <iframe style="height:300px; width:300px;" src="https://janakmallik.github.io">
+  <b>IFrame is unavailable here</b>
+  </iframe> -->
+
+    <div class="container py-5 my-5" id="AboutMe">
+      <!-- start div -->
+
+      <div class="row">
+        <!-- <div class="col-sm-4" style="background: blue;">col-sm-1</div> -->
+        <div class="col-sm-12">
+          <h1 class="text-black display-3">About Me</h1>
+        </div>
+
+        <div class="col-sm-4 mt-3">
+          <img src="img/jm4.jpeg" class="janak-image2" alt="Janak Mallik" />
+        </div>
+
+        <div class="col-sm-8 mt-3">
+          <h5 class="text-black" style="margin-bottom: 30px">My name is janak mallik, currently studying at Ahsanullah University of Science and Technology in Computer Science & Engineering at 3rd year 1st semester, Very satisfied by studying here. Also learning design and programming from various courses. I am a happy, calm and peaceful person who is always excited trying new things.</h5>
+
+          <div class="container d-flex align-items-start">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Education</button>
+              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Interests</button>
+              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Achievements</button>
+              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Favorites</button>
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <dl>
+                  <dt>B.Sc. in CSE 2022*(on going)</dt>
+                  <dd>Ahsanullah University of Science and Technology, Dhaka. [3rd year 1st semester]</dd>
+                  <dt>HSC 2019</dt>
+                  <dd>Amrita Lal Dey College, Barisal.</dd>
+                  <dt>SSC 2016</dt>
+                  <dd>Jhalokhathi Govt. High School, Jhalokhathi.</dd>
+                </dl>
+              </div>
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <dl>
+                  <dt>Game Development</dt>
+                  <dt>CPU Architecture</dt>
+                  <dt>Photography</dt>
+                  <dt>FrontEnd Web</dt>
+                  <dt>Graphics Designing</dt>
+                  <dt>Android App Development</dt>
+                </dl>
+              </div>
+              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                <dl>
+                  <dt>Champion in AUST Intra Valorant Cup</dt>
+                  <dt>Runners Up in AUST CSE Championship Spring-2020</dt>
+                  <dt>Champion in AUST CSE Championship Fall-2020</dt>
+                </dl>
+              </div>
+              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <dl>
+                  <dt>Cricket</dt>
+                  <dt>Peace of mind</dt>
+                  <dt>Marvel</dt>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------experience------------------------->
+
+    <div class="skill bg-secondary text-white w-100 vh-100 d-flex justify-conent-center align-items-center" id="experience">
+      <div class="container">
+        <div class="grid-item item1">
+          <h1 class="text-black display-3">My Experience</h1>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+          <div class="grid-item">
+            <!-- <div class="col"> -->
+            <h3>Computer operator</h3>
+            <p style="font-size: 130%">I have many experience working as a computer operator</p>
+          </div>
+          <div class="grid-item">
+            <h3>Software developing</h3>
+            <p style="font-size: 130%">I developed sofware using android studio, java and i-graphics</p>
+          </div>
+          <div class="grid-item">
+            <h3>Programming contest</h3>
+            <p style="font-size: 130%">I am regularly participating at Codeforce Since 2020</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-5 px-3 bg-secondary" id="portfolio">
+      <div class="container">
+        <div class="grid-item item1">
+          <h1 class="text-white display-3">My Portfolio</h1>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+          <div class="grid-item2">
+            <h3>HEROS OF THE GALAXY</h3>
+            <img src="img/ins2.jpg" class="janak-image2 mx-auto d-block" />
+            <p style="font-size: 100%">
+              I have built a game named "HEROS OF THE GALAXY" using i-graphics and C++ where a user can shoot enemies and objects and gain points which is really a fun to play.<br />
+              More deatils is
+              <a href="https://drive.google.com/drive/folders/1wiEWdTDihxs4wBOAosptIAlxe0kIrk-5?usp=sharing" target="_blank">here.</a>
+            </p>
+          </div>
+          <div class="grid-item2">
+            <h3>CHATMAPP</h3>
+            <img src="img/s3.jpg" class="janak-image2 mx-auto d-block" />
+            <p style="font-size: 100%">
+              I developed chat based software named "CHATMAPP" using java sdk where users can create individual accounts to chat with other users which is really helpfull for communication.<br />
+              More deatils is
+              <a href="https://drive.google.com/file/d/1QqigWFrq2pbljYsOp_O2Wz0yn_B3X283/view?usp=sharing" target="_blank">here.</a>
+            </p>
+          </div>
+          <div class="SHOPEASY grid-item2">
+            <h3>SHOPEASY</h3>
+            <img src="img/andP.jpg" class="janak-image2 mx-auto d-block" />
+            <p style="font-size: 100%">
+              I have built a androida app named "SHOPEASY" for shopping grocery items from sellers which makes shopping easy and fast. Here a user can create account to login for shopping indivdually.
+
+              <br />More deatils is
+              <a href="https://drive.google.com/drive/folders/1wiEWdTDihxs4wBOAosptIAlxe0kIrk-5?usp=sharing" target="_blank">here.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+
+      </div>
+    </div> -->
+
+    <!---------------------------------skill page------------------------------------------>
+    <!-- <div class="container">
+    <div
+      class="w-100 skill bg-dark text-white w-100 vh-100 d-flex justify-conent-center align-items-center"
+      id="MySkills"
+    >
+      <div class="grid-container">
+        <div class="grid-item iitem1">
+          <h1 class="text-black display-3">My Skills</h1>
+        </div>
+        <div class="grid-item"><h3 style="text-align: center">C/C++</h3></div>
+        <div class="grid-item"><h3 style="text-align: center">java</h3></div>
+        <div class="grid-item">
+          <h3 style="text-align: center">Latex Overleaf</h3>
+        </div>
+        <div class="grid-item">
+          <h3 style="text-align: center">MS Office</h3>
+        </div>
+        <div class="grid-item">
+          <h3 style="text-align: center">Bootstrap 5</h3>
+        </div>
+        <div class="grid-item">
+          <h3 style="text-align: center">Android SDK</h3>
+        </div>
+        <div class="grid-item"><h3 style="text-align: center">Css</h3></div>
+        <div class="grid-item"><h3 style="text-align: center">HTML</h3></div>
+        <div class="grid-item">
+          <h3 style="text-align: center">Google Workspace</h3>
+        </div>
+        <div class="grid-item"><h3 style="text-align: center">Adobe</h3></div>
+        <div class="grid-item">
+          <h3 style="text-align: center">DDL & DML</h3>
+        </div>
+        <div class="grid-item">
+          <h3 style="text-align: center">Assembly Language</h3>
+        </div>
+      </div>
+    </div>
+    </div> -->
+    <!-------------------------------------------portfolio page--------------------------->
+    <!-- <div class="container">
+    <div
+      class="w-100 skill bg-secondary text-white w-100 vh-100 d-flex justify-conent-center align-items-center"
+      id="portfolio"
+    >
+      <div class="grid-container">
+        <div class="grid-item item1">
+          <h1 class="text-black display-3">My Portfolio</h1>
+        </div>
+        <div class="grid-item2">
+          <h3>HEROS OF THE GALAXY</h3>
+          <img src="img/ins2.jpg" class="janak-image2 mx-auto d-block" />
+          <p style="font-size: 100%">
+            I have built a game named "HEROS OF THE GALAXY" using i-graphics and
+            C++ where a user can shoot enemies and objects and gain points which
+            is really a fun to play.<br />
+            More deatils is
+            <a
+              href="https://drive.google.com/drive/folders/1wiEWdTDihxs4wBOAosptIAlxe0kIrk-5?usp=sharing"
+              target="_blank"
+              >here.</a
+            >
+          </p>
+        </div>
+        <div class="grid-item2">
+          <h3>CHATMAPP</h3>
+          <img src="img/s3.jpg" class="janak-image2 mx-auto d-block" />
+          <p style="font-size: 100%">
+            I developed chat based software named "CHATMAPP" using java sdk
+            where users can create individual accounts to chat with other users
+            which is really helpfull for communication.<br />
+            More deatils is
+            <a
+              href="https://drive.google.com/file/d/1QqigWFrq2pbljYsOp_O2Wz0yn_B3X283/view?usp=sharing"
+              target="_blank"
+              >here.</a
+            >
+          </p>
+        </div>
+        <div class="grid-item2">
+          <h3>SHOPEASY</h3>
+          <img src="img/andP.jpg" class="janak-image2 mx-auto d-block" />
+          <p style="font-size: 100%">
+            I have built a androida app named "SHOPEASY" for shopping grocery
+            items from sellers which makes shopping easy and fast. Here a user
+            can create account to login for shopping indivdually.
+
+            <br />More deatils is
+            <a
+              href="https://drive.google.com/drive/folders/1wiEWdTDihxs4wBOAosptIAlxe0kIrk-5?usp=sharing"
+              target="_blank"
+              >here.</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    </div> -->
+
+    <!-- <div w3-include-html="social.html"></div>
+    <script>
+      includeHTML();
+    </script> -->
+
+    <!-- <div class="container mt-5 mb-4">
+      <h1 class="text-black display-3">My Instas</h1>
+    </div> -->
+
+    <div class="container mt-5 mb-2 d-flex justify-content-between">
+      <h1 class="text-black fs-1 fw-bold">My Instas</h1>
+      <h1 class="text-black fs-1 fw-bold"><i class="fa-brands fa-instagram"></i></h1>
+    </div>
+    <script src="js/html_include.js"></script>
+    <div w3-include-html="insta_scrl.html"></div>
+    <script>
+      includeHTML();
+    </script>
+
+    <script async src="//www.instagram.com/embed.js"></script>
+
+    <div class="container my-5 my-5">
+      <h1 class="text-black display-3 text-center fw-bold">Follow me on social media to be connected</h1>
+    </div>
+
+    <div class="container mt-5 mb-2 d-flex justify-content-between">
+      <h1 class="text-black fs-1 fw-bold">My Tweets</h1>
+      <h1 class="text-black fs-1 fw-bold"><i class="fa-brands fa-twitter"></i></h1>
+    </div>
+
+    <!-- <div class="container mt-5 mb-4">
+      <h1 class="text-black display-3">My Tweets</h1>
+    </div> -->
+
+    <div w3-include-html="twt_scrl.html"></div>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <!-------------------------------------------------------------contacct me--------------->
+
+    <div class="py-5 px-3 bg-secondary" id="ContactMe">
+      <!-- start div  -->
+      <div class="container">
+        <div class="row skill contact-wrap">
+          <div class="col-sm-3 contact-in" style="background: rgb(104, 13, 13)">
+            <h1 class="text-black">Contact Info</h1>
+            <h2 class="text-black"><i class="fa fa-phone" aria-hidden="true"></i> Phone</h2>
+            <p>
+              <a href="tel:+8801793711207" class="text-white">+8801793711207</a>
+            </p>
+            <h2><i class="fa fa-envelope" aria-hidden="true"></i> Email</h2>
+            <p>
+              <a href="mailto:janaktoy@gmail.com" class="text-white">janaktoy@gmail.com</a>
+            </p>
+            <h2><i class="fa-solid fa-location-dot"></i> Address</h2>
+            <p>
+              <a href="https://goo.gl/maps/hC8DbDpbcXJeSxq37" class="text-white" target="_blank">Dhaka, Bangladesh</a>
+            </p>
+          </div>
+          <div class="col-sm-6 contact-in">
+            <h1>Send a Message</h1>
+            <form>
+              <input type="text" placeholder="Full Name" class="contact-in-input" />
+              <input type="text" placeholder="Email" class="contact-in-input" />
+              <input type="text" placeholder="Subject" class="contact-in-input" />
+              <textarea placeholder="Message" class="contact-in-textarea"></textarea>
+              <input type="submit" value="SUBMIT" class="contact-in-btn" />
+            </form>
+          </div>
+          <div class="col-sm-3 contact-in">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116834.13673771221!2d90.41932575!3d23.780636450000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1656344175020!5m2!1sen!2sbd" width="100%" height="auto" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vertically centered modal -->
+
+    <!------------------------footer-------------------------------------->
+    <footer class="text-center text-white" style="background-color: #f1f1f1">
+      <!-- Grid container -->
+      <div class="w-100 ft_cls py-4">
+        <!-- Section: Social media -->
+        <section class="">
+          <!-- Facebook -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.facebook.com/janakmallik7/" target="_blank" role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com/janakmallik" target="_blank" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+          <!-- youtube -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.youtube.com/channel/UC5AiSFNKwSObHGmUqUkEqPQ" target="_blank" role="button" data-mdb-ripple-color="dark"><i class="fab fa-youtube"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/janakmallik2/" target="_blank" role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/in/janakmallik/" target="_blank" role="button" data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+          <!-- Github -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/janakmallik" target="_blank" role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Copyright -->
+      <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-dark" target="_blank" href="https://sites.google.com/view/janakmallik">Janak Mallik</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <script>
+      var myModal = new bootstrap.Modal(document.getElementById("myModal"), {});
+      myModal.toggle();
+    </script>
+
+    <script src="js/function.js"></script>
+    <script src="js/time.js"></script>
+
+    <!-- <script src="js/html_include.js"></script> -->
+    <!-- <script type="text/javascript">
+      $(window).on('load', function() {
+          $('#myModal').modal('show');
+      });
+  </script> -->
+  </body>
+</html>
