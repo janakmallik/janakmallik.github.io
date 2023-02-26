@@ -76,7 +76,7 @@ body.night-mode .navbar-brand a {
 }
 
 button {
-    font-size: 14px;
+  font-size: 14px;
   background-color: rgba(0, 0, 0, 0);
   color: black;
   border: none;
@@ -84,6 +84,16 @@ button {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   /* border-radius: 12px; */
+}
+
+.back-btn {
+  background-color: #44444400;
+  color: red;
+}
+
+.back-btn:hover{
+  background-color: #44444400;
+text-decoration: underline;  
 }
 
 button.night-mode {
@@ -99,15 +109,16 @@ button.night-mode:hover {
 
 
 #mode-button {
-  /* position: fixed;
-
+  position: fixed;
   padding: 10px;
   bottom: 20px;
-  left: 30px;
-  z-index: 99; */
+  right: 30px;
+  z-index: 99;
 }
 
 #mode-button:hover{
     background-color: #44444400;
   text-decoration: underline;  
 }
+
+
