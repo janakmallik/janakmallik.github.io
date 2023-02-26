@@ -30,9 +30,44 @@
 
     <style>
       body {
+        background-color: white;
+        color: black;
+        transition: all 0.5s ease-in-out;
+      }
+  
+      body.night-mode {
         background-color: black;
         color: white;
       }
+  
+      button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+      }
+  
+      button:hover {
+        background-color: #3E8E41;
+      }
+  
+      button.night-mode {
+        background-color: #555;
+        color: white;
+      }
+  
+      button.night-mode:hover {
+        background-color: #444;
+      }
+
+      #floating-element {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			padding: 10px;
+		}
     </style>
 
     <style>
@@ -51,25 +86,47 @@
 
   <body>
 
-    <button onclick="toggleColors()">Toggle Colors</button>
+    <button id="floating-element" onclick="toggleMode()">Night Mode</button>
 
-	<script>
-		function toggleColors() {
-			var body = document.getElementsByTagName("body")[0];
-			if (body.style.backgroundColor === "black") {
-				body.style.backgroundColor = "white";
-				body.style.color = "black";
-			} else {
-				body.style.backgroundColor = "black";
-				body.style.color = "white";
-			}
-		}
-	</script>
+    <script>
+      function toggleMode() {
+    var body = document.getElementsByTagName("body")[0];
+    var button = document.getElementsByTagName("button")[0];
+
+    body.classList.toggle("night-mode");
+    button.classList.toggle("night-mode");
+
+    if (button.innerHTML === "Night Mode") {
+        button.innerHTML = "Day Mode";
+    } else {
+        button.innerHTML = "Night Mode";
+    }
+}
+    </script>
 
     <button onclick="topFunction()" id="scroll_to_top_btn" title="Go to top">
       <i class="fa-solid fa-angles-up"></i>
     </button>
 
+    <div class="container">
+      <text class="fs-2 fw-bold" style="letter-spacing: 1px">Hi, My name is Janak Mallik</text>
+
+      <!-- twitter linking button setion -->
+      <section class="mt-2">
+        <a href="https://twitter.com/janakmallik?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @janakmallik</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </section>
+
+      <p class="fs-4 mb-4">I am a programmer, designer and can make strategy for your business.</p>
+
+      <p>About me --></p>
+      <p>I am a computer science student in my third year of undergraduate studies. My knowledge in programming
+      languages, algorithms and data structures provides a solid foundation for me to excel in the field of
+      software and web development. I am driven by the desire to create innovative technologies and make a
+      positive impact in the field of computer science and engineering.
+      </p>
+
+    </div>
     <!-- w-100 vh-100 -->
     <div class="min-vh-100 d-flex justify-conent-center align-items-center mb-5 py-5" id="home">
       <div class="container">
@@ -550,6 +607,7 @@
     </script>
 
     <script src="js/function.js"></script>
+    <script src="js/function2.js"></script>
     <script src="js/time.js"></script>
 
     <!-- <script src="js/html_include.js"></script> -->
