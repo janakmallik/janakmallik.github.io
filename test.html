@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+	<p>Current time and date:</p>
+	<p id="time"></p>
+	<p id="date"></p>
+
+	<script>
+		function updateTime() {
+			var now = new Date();
+
+			var hours = now.getHours();
+			var minutes = now.getMinutes();
+			var seconds = now.getSeconds();
+			var timeStr = formatTime(hours) + ":" + formatTime(minutes) + ":" + formatTime(seconds);
+			document.getElementById("time").innerHTML = timeStr;
+
+			var month = now.getMonth() + 1;
+			var day = now.getDate();
+			var year = now.getFullYear();
+			var dateStr = formatTime(day) + "/" + formatTime(month) + "/" + year;
+			document.getElementById("date").innerHTML = dateStr;
+		}
+
+		function formatTime(num) {
+			if (num < 10) {
+				return "0" + num;
+			} else {
+				return num;
+			}
+		}
+
+		// Update the time every second
+		setInterval(updateTime, 1000);
+	</script>
+</body>
+</html>
