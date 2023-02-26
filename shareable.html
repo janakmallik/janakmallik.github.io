@@ -12,9 +12,41 @@
         <li><a href="#">Contact</a></li>
         <li><a href="#">News</a></li>
         <li><a href="#">Gallery</a></li>
-        <li><button id="day-mode" onclick="toggleMode()">Dark Mode</button></li>
+        <li><button id="mode-button" onclick="toggleMode()">Night Mode</button></li>
       </ul>
     </nav>
   </div>
+
+  <script>
+    var mode = localStorage.getItem("mode") || "day-mode";
+    var body = document.getElementsByTagName("body")[0];
+    var button = document.getElementById("mode-button");
+
+    function setMode() {
+        body.classList.add(mode);
+        button.classList.add(mode);
+
+        if (mode === "night-mode") {
+            button.innerHTML = "Day Mode";
+        } else {
+            button.innerHTML = "Night Mode";
+        }
+    }
+
+    function toggleMode() {
+        body.classList.toggle("night-mode");
+        button.classList.toggle("night-mode");
+
+        if (button.innerHTML === "Night Mode") {
+            button.innerHTML = "Day Mode";
+            mode = "night-mode";
+        } else {
+            button.innerHTML = "Night Mode";
+            mode = "day-mode";
+        }
+
+        localStorage.setItem("mode", mode);
+    }
+</script>
 
   <script src="function2.js"></script>

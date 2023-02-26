@@ -31,36 +31,38 @@ function toggleNavbar() {
 
 
 //   night and day mode
-var text = "Fun Mode";
+// var text = "Fun Mode";
 
-  function setmode2()
-  {
-    document.getElementById("day-mode").innerHTML = text;
-  };
-document.getElementById("day-mode").innerHTML = text;
+//   function setmode2()
+//   {
+//     document.getElementById("day-mode").innerHTML = text;
+//   };
+// document.getElementById("day-mode").innerHTML = text;
 
-function toggleMode() {
-    var body = document.getElementsByTagName("body")[0];
-    var button = document.getElementsByTagName("button")[0];
+// function toggleMode() {
+//     var body = document.getElementsByTagName("body")[0];
+//     var button = document.getElementsByTagName("button")[0];
 
     
 
-    // body.classList.toggle("night-mode");
-    // button.classList.toggle("night-mode");
+//     // body.classList.toggle("night-mode");
+//     // button.classList.toggle("night-mode");
 
-    //text = button.innerHTML;
+//     //text = button.innerHTML;
 
-    if (text === "Dark Mode") {
-        text = "Light Mode";
-    button.innerHTML = "Light Mode";
-    body.classList.add("night-mode");
-    button.classList.add("night-mode");
-    } else {
-    button.innerHTML = "Dark Mode";
-    text = "Dark Mode";
-    body.classList.remove("night-mode");
-    button.classList.remove("night-mode");
-    }
+//     if (text === "Dark Mode") {
+//         text = "Light Mode";
+//     button.innerHTML = "Light Mode";
+//     body.classList.add("night-mode");
+//     button.classList.add("night-mode");
+//     } else {
+//     button.innerHTML = "Dark Mode";
+//     text = "Dark Mode";
+//     body.classList.remove("night-mode");
+//     button.classList.remove("night-mode");
+//     }
 
-    setTimeout(startTime, 1000);
-};
+//     setTimeout(startTime, 1000);
+// };
+
+

@@ -98,7 +98,7 @@ button.night-mode:hover {
 
 
 
-#day-mode {
+#mode-button {
   /* position: fixed;
 
   padding: 10px;
@@ -107,7 +107,7 @@ button.night-mode:hover {
   z-index: 99; */
 }
 
-#day-mode:hover{
+#mode-button:hover{
     background-color: #44444400;
   text-decoration: underline;  
 }
