@@ -33,50 +33,6 @@
     <!-- <script src="js/html_include.js"></script> -->
 
     <style>
-      body {
-        background-color: white;
-        color: black;
-        transition: all 0.5s ease-in-out;
-      }
-  
-      body.night-mode {
-        background-color: black;
-        color: white;
-      }
-  
-      button {
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        transition: all 0.5s ease-in-out;
-      }
-  
-      button:hover {
-        background-color: #3E8E41;
-      }
-  
-      button.night-mode {
-        background-color: #555;
-        color: white;
-      }
-  
-      button.night-mode:hover {
-        background-color: #444;
-      }
-
-      #floating-element {
-			position: fixed;
-			bottom: 0;
-			left: 0;
-			padding: 10px;
-		}
-
-    
-    </style>
-
-    <style>
       .blink {
           animation: blinker 1.5s linear infinite;
           color: red;
@@ -92,47 +48,22 @@
 
   <body>
 
-    <button id="floating-element" onclick="toggleMode()">Night Mode</button>
+    <!-- navbar -->
+    <div w3-include-html="shareable.html"></div>
+    
+    <!-- <button id="day-mode" onclick="toggleMode()">Dark Mode</button>
 
     <script>
-      function toggleMode() {
-    var body = document.getElementsByTagName("body")[0];
-    var button = document.getElementsByTagName("button")[0];
 
-    body.classList.toggle("night-mode");
-    button.classList.toggle("night-mode");
-
-    if (button.innerHTML === "Night Mode") {
-        button.innerHTML = "Day Mode";
-    } else {
-        button.innerHTML = "Night Mode";
-    }
-}
     </script>
 
     <button onclick="topFunction()" id="scroll_to_top_btn" title="Go to top">
       <i class="fa-solid fa-angles-up"></i>
-    </button> 
-    
-      <!-- navbar -->
-      <!-- <div class="container">
-        <nav class="navbar">
-          <div class="navbar-brand" style="padding: 0 0;">
-            Janak Mallik
-          </div>
-          <ul class="navbar-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Gallery</a></li>
-          </ul>
-        </nav>
-      </div> -->
+    </button> -->
 
-      <!-- navbar -->
-      <div w3-include-html="shareable.html"></div>
+      
 
-    <div class="container mt-2">
+    <div class="container mt-5">
       <text class="fs-2 fw-bold" style="letter-spacing: 1px">Hi, My name is Janak Mallik</text>
 
       <!-- twitter linking button setion -->

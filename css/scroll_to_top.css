@@ -24,6 +24,8 @@
   transition: all 0.3s ease 0s;
 }
 
+
+
 #scroll_to_top_btn:hover {
   background-color: #1f51ff;
   box-shadow: 0px 15px 20px rgba(45, 87, 177, 0.4);

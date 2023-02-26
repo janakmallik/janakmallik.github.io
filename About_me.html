@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="Portfolio.css" />
     
-    <title>Janak Mallik</title>
+    <title>About - Janak Mallik</title>
     <link rel="icon" type="image/x-icon" href="img/jm12.jpg" />
     <link rel="stylesheet" href="css/scroll_to_top.css" />
     <link rel="stylesheet" href="css/pop_up.css" />
@@ -32,49 +32,7 @@
 
     <!-- <script src="js/html_include.js"></script> -->
 
-    <style>
-      body {
-        background-color: white;
-        color: black;
-        transition: all 0.5s ease-in-out;
-      }
-  
-      body.night-mode {
-        background-color: black;
-        color: white;
-      }
-  
-      button {
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        transition: all 0.5s ease-in-out;
-      }
-  
-      button:hover {
-        background-color: #3E8E41;
-      }
-  
-      button.night-mode {
-        background-color: #555;
-        color: white;
-      }
-  
-      button.night-mode:hover {
-        background-color: #444;
-      }
-
-      #floating-element {
-			position: fixed;
-			bottom: 0;
-			left: 0;
-			padding: 10px;
-		}
-
     
-    </style>
 
     <style>
       .blink {
@@ -91,37 +49,15 @@
   </head>
 
   <body>
+    <!-- <button id="day-mode" onclick="toggleMode()">Day Mode</button> -->
+    <!-- navbar -->
+    <div w3-include-html="shareable.html"></div>
+    
 
-    <button id="floating-element" onclick="toggleMode()">Night Mode</button>
-
-    <script>
-      function toggleMode() {
-    var body = document.getElementsByTagName("body")[0];
-    var button = document.getElementsByTagName("button")[0];
-
-    body.classList.toggle("night-mode");
-    button.classList.toggle("night-mode");
-
-    if (button.innerHTML === "Night Mode") {
-        button.innerHTML = "Day Mode";
-    } else {
-        button.innerHTML = "Night Mode";
-    }
-}
-    </script>
-
-    <button onclick="topFunction()" id="scroll_to_top_btn" title="Go to top">
+    <!-- <button onclick="topFunction()" id="scroll_to_top_btn" title="Go to top">
       <i class="fa-solid fa-angles-up"></i>
-    </button>
-    
-          <!-- navbar -->
-          <div w3-include-html="shareable.html"></div>
-          
-          
-          
+    </button> -->
 
-          
-    
 
 
     <div class="container mt-5">

@@ -23,3 +23,20 @@ function toggleNavbar() {
   function goBack() {
     window.history.back();
   }
+
+
+
+//   night and day mode
+function toggleMode() {
+    var body = document.getElementsByTagName("body")[0];
+    var button = document.getElementsByTagName("button")[0];
+
+    body.classList.toggle("night-mode");
+    button.classList.toggle("night-mode");
+
+    if (button.innerHTML === "Dark Mode") {
+        button.innerHTML = "Light Mode";
+    } else {
+        button.innerHTML = "Dark Mode";
+    }
+};
