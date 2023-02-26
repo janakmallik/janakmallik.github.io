@@ -120,6 +120,11 @@ button.night-mode:hover {
   /* For mobile phones: */
   #mode-button {
     left: -250px;
+    
+    position: fixed;
+    padding: 5px;
+    bottom: 20px;
+    z-index: 99;
   }
 }
 
