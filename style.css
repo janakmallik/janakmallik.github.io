@@ -116,6 +116,17 @@ button.night-mode:hover {
   z-index: 99;
 }
 
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  #mode-button {
+    position: fixed;
+    padding: 0px;
+    bottom: 20px;
+    left: 0px;
+    /* z-index: 99; */
+  }
+}
+
 #mode-button:hover{
     background-color: #44444400;
   text-decoration: underline;  
