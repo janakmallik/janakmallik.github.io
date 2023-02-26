@@ -19,3 +19,7 @@ function toggleNavbar() {
     navbar.classList.toggle('show');
   }
   
+
+  function goBack() {
+    window.history.back();
+  }

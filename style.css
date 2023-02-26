@@ -1,16 +1,7 @@
-body {
-    font-family: 'Roboto', sans-serif;
-  }
 
   
-  h1, h2, h3 {
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  p, li {
-    font-family: 'Roboto', sans-serif;
-  }
-  
+
+
   .mySimpleNav ul {
     list-style-type: none;
     margin: 0;
@@ -41,6 +32,7 @@ body {
   }
   
   .navbar-brand{
+    font-size: 14px;
     text-decoration: none;
   }
   
@@ -56,8 +48,15 @@ body {
   }
   
   .navbar-links li a {
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
   }
   
+  .navbar-links li a:hover {
+    text-decoration: underline;
+  }
+
+  .hover-underline:hover {
+    text-decoration: underline;
+  }
   
