@@ -1,40 +1,112 @@
-<!DOCTYPE html>
-<html>
-<head>
+<div class="container txt-sz">
+    <div class="container">
 
-</head>
-<body>
-	<p>Current time and date:</p>
-	<p id="time"></p>
-	<p id="date"></p>
+      <p style="margin-block: 0px; text-align: right;"><a href="Janak_Mallik_Resume.pdf" target="_blank">get the pdf</a></p>
 
-	<script>
-		function updateTime() {
-			var now = new Date();
+      <text class="fs-2 fw-bold" style="letter-spacing: 1px">Janak Mallik</text>
 
-			var hours = now.getHours();
-			var minutes = now.getMinutes();
-			var seconds = now.getSeconds();
-			var timeStr = formatTime(hours) + ":" + formatTime(minutes) + ":" + formatTime(seconds);
-			document.getElementById("time").innerHTML = timeStr;
+      <!-- twitter linking button setion -->
+      <section class="mt-2">
+        <a href="https://twitter.com/janakmallik?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @janakmallik</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </section>
+      <!-- <br><a href="twitter.com/janakmallik">twitter</a><br> -->
+    </div>
 
-			var month = now.getMonth() + 1;
-			var day = now.getDate();
-			var year = now.getFullYear();
-			var dateStr = formatTime(day) + "/" + formatTime(month) + "/" + year;
-			document.getElementById("date").innerHTML = dateStr;
-		}
+    <!-- resume start  -->
+    <div class="txt-sz container">
+      <text class="">I am a computer science student in my third year of undergraduate studies. My knowledge in programming languages, algorithms and data structures provides a solid foundation for me to excel in the field of software and web development. I am driven by the desire to create innovative technologies and make a positive impact in the field of computer science and engineering.</text>
 
-		function formatTime(num) {
-			if (num < 10) {
-				return "0" + num;
-			} else {
-				return num;
-			}
-		}
+    </div>
 
-		// Update the time every second
-		setInterval(updateTime, 1000);
-	</script>
-</body>
-</html>
+    <!-- 2nd part -->
+    <div class="txt-sz cntinfo container mt-2">
+
+        <div class="column2  "> <!-- email + adress  -->
+          <b>E-MAILS</b><br><hr>
+          <text><a href="">janaktoy@gmail.com</a></text><br>
+          <text><a href="">janakmallik10@gmail.com</a></text>
+
+          <span>
+            <br><b>ADDRESS</b><br>
+            <hr>
+            <text>Khilgaon, Dhaka</text>
+          </span>
+
+          </div>
+
+          <div class="column2  "> <!-- SOCIAL LINKS  -->
+            <b>SOCIAL LINKS</b><br><hr>
+            <text><a href="https://twitter.com/janakmallik">twitter.com/janakmallik</a></text><br>
+            <text><a href="https://github.com/janakmallik">github.com/janakmallik</a></text><br>
+            <text><a href="https://www.linkedin.com/in/janakmallik/">linkedin.com/in/janakmallik</a></text><br>
+            </div>
+
+            <div class="column2  "> <!-- PORTFOLIO SIT  -->
+                <b>PORTFOLIO SITE</b><br><hr>
+                <text><a href="https://janakmallik.github.io/">janakmallik.github.io</a></text><br>
+
+                <span>
+                    <b>PHONE</b><br>
+                    <hr>
+                    <text>+88017#######</text>
+                  </span>
+            </div>
+
+      </div>
+
+      <div class="container mt-2">
+        <b>E D U C A T I O N</b><br><hr>
+
+        <div class="txt-sz" style="display: flex; justify-content: space-between;">
+            <div class="left" style="text-align: left;"><b>Bachelor of Science in Computer Science and Engineering</b></div>
+            <div class="right" style="text-align: right;">December 2019 - Present</div>
+        </div>
+
+        <div class="txt-sz" style="display: flex; justify-content: space-between;">
+            <div class="left" style="text-align: left;">Ahsanullah University of Science and Technology, Dhaka.</div>
+            <div class="right" style="text-align: right; color: gray;">[3rd year 2nd semester]</div>
+        </div>
+      </div>
+
+      <div class="container mt-2">
+        <b>T E C H N I C A L &nbsp; S K I L L S</b><br><hr>
+
+        <div class="txt-sz" style="display: flex; justify-content: space-between;">
+            <text>
+            <b>Language</b> - C / C++, C#, Java, PHP, Kotlin, Assembly Language<br>
+            <b>Web Development</b> - HTML, CSS, Bootstrap, JS, ASP.NET (MVC)<br>
+            <b>Database</b> - MySQL, SQL, Firebase<br>
+            <b>Development Tools</b> - NetBeans IDE, Android SDK, Visual Studio 2022<br>
+            <b>Others</b> - Latex Overleaf<br></text>
+        </div>
+      </div>
+
+      <!-- last part -->
+    <div class="cntinfo container">
+
+        <div class="txt-sz column2   mt-2"> <!-- email + adress  -->
+          <b>P E R S O N A L &nbsp; S K I L L S</b><br><hr>
+          <text>
+            - Managing project<br>
+- Conducting team work<br>
+- Fact based learning<br>
+- Business understanding<br>
+
+          </text>
+          </div>
+
+          <div class="txt-sz column2   mt-2"> <!-- SOCIAL LINKS  -->
+            <b>P E R S O N A L &nbsp; I N T E R E S T S</b><br><hr>
+            <text>
+                - CPU Architecture<br>
+- Virtual & Augmented Reality<br>
+- Data & events analytical works<br>
+            </text>
+        </div>
+      </div>
+    </div>
+
+      <div class="container mb-5">
+        <hr style="margin-top: 10px;">
+      </div>
