@@ -139,3 +139,7 @@ button.night-mode:hover {
   border-top: 1px solid white;
   margin-block: 0;
 } */
+
+a:hover{
+  text-decoration: underline;
+}
