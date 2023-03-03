@@ -1,0 +1,145 @@
+.mySimpleNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* margin-top: 10px; */
+  overflow: hidden;
+}
+
+.mySimpleNav li {
+  display: inline;
+  padding: 0px;
+}
+
+.mySimpleNav li a {
+  display: inline;
+  float: right;
+  padding: 10px;
+}
+
+/* navbar  */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.navbar-brand {
+  /* font-size: 14px; */
+  /* text-decoration: none; */
+}
+
+.navbar-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar-links li a {
+  margin-right: 20px;
+}
+
+.navbar-links li a {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.navbar-links li a:hover {
+  text-decoration: underline;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+.navbar-brand{
+  /* font-size: 14px;
+  text-decoration: none; */
+  color: black;
+}
+
+/* for night and day mode */
+body {
+  background-color: white;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+
+body.night-mode {
+  background-color: black;
+  color: white;
+}
+
+body.night-mode .navbar-brand {
+  color: white;
+}
+
+button {
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  border: none;
+  /* padding: 10px 10px; */
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  /* border-radius: 12px; */
+}
+
+.back-btn {
+  background-color: #44444400;
+  color: red;
+}
+
+.back-btn:hover{
+  background-color: #44444400;
+text-decoration: underline;  
+}
+
+button.night-mode {
+  background-color: #55555500;
+  color: white;
+}
+
+button.night-mode:hover {
+  background-color: #44444400;
+  text-decoration: underline;
+}
+
+
+
+#mode-button {
+  position: fixed;
+  padding: 10px;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+
+  /* background-color: red; */
+}
+
+#mode-button:hover{
+    background-color: #44444400;
+  text-decoration: underline;  
+}
+
+
+/* body.night-mode hr{
+  border: none;
+  border-top: 1px solid white;
+  margin-block: 0;
+} */
+
+a:hover{
+  text-decoration: underline;
+}
