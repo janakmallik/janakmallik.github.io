@@ -42,11 +42,12 @@
 }
 
 .navbar-links li a {
-  font-size: 14px;
+  /* font-size: 14px; */
   text-decoration: none;
 }
 
 .navbar-links li a:hover {
+  color: #0D6EFD;
   text-decoration: underline;
 }
 
@@ -81,9 +82,16 @@ body.night-mode {
   color: black;
 }
 
-body.night-mode .navbar-brand {
+.navbar-brand a{
+  font-weight: bold;
+  color: white;
+}
+
+body.night-mode div.navbar-brand a {
   color: black;
 }
+
+
 
 button {
   font-size: 14px;
@@ -157,3 +165,4 @@ a:hover{
 .footer p {
   margin: 0;
 }
+
