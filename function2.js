@@ -90,4 +90,12 @@ function goBack() {
 // Call updateClock every second to update the time and date
 setInterval(updateClock, 1000);
 
+
+//target _blank for all link
+var links = document.getElementsByClassName('blue-link');
+for (var i = 0; i < links.length; i++) {
+  links[i].target = '_blank';
+}
+
+
   
