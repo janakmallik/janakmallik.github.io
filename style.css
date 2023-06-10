@@ -143,3 +143,17 @@ button.night-mode:hover {
 a:hover{
   text-decoration: underline;
 }
+
+
+
+/* footer */
+.footer {
+  /* background-color: #f8f9fa; */
+  padding: 20px 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
