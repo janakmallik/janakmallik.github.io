@@ -66,29 +66,29 @@ p a:hover {
 .navbar-brand{
   /* font-size: 14px;
   text-decoration: none; */
-  color: black;
+  color: white;
 }
 
 /* for night and day mode */
 body {
-  background-color: white;
-  color: black;
+  background-color: #1D1E20;
+  color: white;
   transition: all 0.5s ease-in-out;
 }
 
 body.night-mode {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 body.night-mode .navbar-brand {
-  color: white;
+  color: black;
 }
 
 button {
   font-size: 14px;
   background-color: rgba(0, 0, 0, 0);
-  color: black;
+  color: white;
   border: none;
   /* padding: 10px 10px; */
   cursor: pointer;
@@ -107,12 +107,12 @@ text-decoration: underline;
 }
 
 button.night-mode {
-  background-color: #55555500;
-  color: white;
+  /* background-color: #55555500; */
+  color: black;
 }
 
 button.night-mode:hover {
-  background-color: #44444400;
+  /* background-color: #44444400; */
   text-decoration: underline;
 }
 

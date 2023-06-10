@@ -187,6 +187,38 @@
       <a href="https://www.linkedin.com/in/janakmallik/" target="_blank">linkedin.com/in/janakmallik</a><br>
       <a href="https://www.youtube.com/@janakmallik" target="_blank">youtube.com/@janakmallik</a><br>
     </div>
+
+
+
+
+
+    <!-- -------------------------------Click to copy my E-mail----------------------------- -->
+    <div class="container mb-2">
+        <div class="row">
+          <div class="col-md-2">
+          <span style="color:red;">E-mails &dash;&dash;&GT;</span>
+          </div>
+          <div class="col">
+            <text class="copyText" data-clipboard-text="janaktoy@gmail.com" style="cursor: pointer;" title="Click to copy my E-mail">janaktoy@gmail.com</text><br>
+            <text class="copyText" data-clipboard-text="janakmallik10@gmail.com" style="cursor: pointer;" title="Click to copy my E-mail">janakmallik10@gmail.com</text>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <script>
+      var copyText = document.getElementsByClassName("copyText");
+var clipboard = new ClipboardJS(copyText);
+
+clipboard.on("success", function(e) {
+console.log("Text copied to clipboard: " + e.text);
+});
+
+clipboard.on("error", function(e) {
+console.error("Unable to copy text: " + e.text);
+});
+
+    </script>
     
 
 
