@@ -96,12 +96,21 @@
       padding-top: 5px;
       padding-inline: 10px;
       border-radius: 10px;
+      height: 100%;
+      width: 100%;
     }
 
     body.night-mode div.projet-card {
       background-color: rgb(235, 233, 232);
     }
-    
+
+    /* Media query for mobile devices */
+    @media (max-width: 767px) {
+      .projet-card {
+        height: auto;
+        /* Adjust the height value as needed */
+      }
+    }
   </style>
 </head>
 
@@ -199,38 +208,7 @@
     </div>
   </div>
 
-  <!-- thesis paper -->
-  <div class="container mb-2">
-    <div class="row">
-      <div class="col-md-2">
-        Publications &dash;&dash;&GT;
-      </div>
-      <div class="col">
-        <text>
-          <div class="spinner-border spinner-border-sm" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-        </text>
-      </div>
-    </div>
-  </div>
 
-  <div class="container mb-2">
-    <div class="row">
-      <div class="col-md-2">
-        Good at &dash;&dash;&GT;
-      </div>
-      <div class="col">
-        <text>
-          - Business understanding<br>
-          - Fact based learning<br>
-          - Managing project<br>
-          - Conducting team work<br>
-        </text>
-      </div>
-
-    </div>
-  </div>
 
   <div class="container mb-2">
     <div class="row">
@@ -288,6 +266,39 @@
 
     </div>
   </div>
+
+    <!-- thesis paper -->
+    <div class="container mb-2">
+      <div class="row">
+        <div class="col-md-2">
+          Publications &dash;&dash;&GT;
+        </div>
+        <div class="col">
+          <text>
+            <div class="spinner-border spinner-border-sm" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </text>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container mb-2">
+      <div class="row">
+        <div class="col-md-2">
+          Good at &dash;&dash;&GT;
+        </div>
+        <div class="col">
+          <text>
+            - Business understanding<br>
+            - Fact based learning<br>
+            - Managing project<br>
+            - Conducting team work<br>
+          </text>
+        </div>
+  
+      </div>
+    </div>
 
   <div class="container mb-2">
     <div class="row">
