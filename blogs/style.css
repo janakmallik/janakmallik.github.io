@@ -118,20 +118,20 @@ button.night-mode:hover {
 
 
 
-#mode-button {
+/* #mode-button {
   position: fixed;
   padding: 10px;
   bottom: 20px;
   right: 30px;
   z-index: 99;
 
-  /* background-color: red; */
-}
+  background-color: red;
+} */
 
-#mode-button:hover{
+/* #mode-button:hover{
     background-color: #44444400;
   text-decoration: underline;  
-}
+} */
 
 
 /* body.night-mode hr{
