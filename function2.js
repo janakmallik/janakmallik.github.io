@@ -28,7 +28,7 @@ function toggleNavbar() {
 
 
 //   night and day mode
-var text = "🔆";
+var text = "Day Mode";
 
 function toggleMode() {
     var body = document.getElementsByTagName("body")[0];
@@ -41,15 +41,15 @@ function toggleMode() {
 
     //text = button.innerHTML;Light Mode Dark Mode
 
-    if (text === "🔆") {
-        text = "🌙";
-    button.innerHTML = "🌙";
-    button.style.filter = "grayscale(100%)";
+    if (text === "Day Mode") {
+        text = "Night Mode";
+    button.innerHTML = "Night Mode";
+    
 
     } else {
-    button.innerHTML = "🔆";
-    text = "🔆";
-    button.style.filter = "grayscale(100%)";
+    button.innerHTML = "Day Mode";
+    text = "Day Mode";
+    
     }
 };
 
