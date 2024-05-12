@@ -8,10 +8,10 @@ function toggleMode() {
     body.classList.toggle("night-mode");
     button.classList.toggle("night-mode");
 
-    if (button.innerHTML === "Night Mode") {
-        button.innerHTML = "Day Mode";
+    if (button.innerHTML === "☽") {
+        button.innerHTML = "☼";
     } else {
-        button.innerHTML = "Night Mode";
+        button.innerHTML = "☽";
     }
 }
 
@@ -28,7 +28,7 @@ function toggleNavbar() {
 
 
 //   night and day mode
-var text = "Light Mode";
+var text = "☼";
 
 function toggleMode() {
     var body = document.getElementsByTagName("body")[0];
@@ -41,18 +41,18 @@ function toggleMode() {
 
     //text = button.innerHTML;Light Mode Dark Mode
 
-    if (text === "Light Mode") {
-        text = "Dark Mode";
-    button.innerHTML = "Dark Mode";
+    if (text === "☼") {
+        text = "☽";
+    button.innerHTML = "☽";
 
     } else {
-    button.innerHTML = "Light Mode";
-    text = "Light Mode";
+    button.innerHTML = "☼";
+    text = "☼";
     }
 };
 
 
-// back button
+// back button ☀
 
 function goBack() {
     window.history.back();
