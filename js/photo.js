@@ -13,10 +13,12 @@ function changeImage() {
 function addBorder() {
     var image = document.getElementById('first_pp');
     image.style.border = '3.5px solid rgb(13,110,217,1)'; // Adjust border style as needed
+    // image.style.padding = '1.5px';
 }
 
 function removeBorder() {
     var image = document.getElementById('first_pp');
     image.style.border = '3.5px solid rgb(0,0,0,0)'; // Adjust border style as needed
+    // image.style.padding = '1.5px';
 }
 
