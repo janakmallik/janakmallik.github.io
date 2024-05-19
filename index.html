@@ -396,27 +396,6 @@ based learnings | Managing projects | Conducting team works
     </div>
   </div>
 
-  <div>
-    <h1>Current Active Users: <span id="active-users">0</span></h1>
-</div>
-
-<script>
-    function updateActiveUsers() {
-        fetch('track_users.php')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('active-users').textContent = data.active_users;
-            })
-            .catch(error => console.error('Error fetching active users:', error));
-    }
-
-    // Update active users count every 30 seconds
-    setInterval(updateActiveUsers, 30000);
-
-    // Initial load
-    updateActiveUsers();
-</script>
-
   <!-- <div class="container mb-2 mt-5 d-flex justify-content-center" style="text-align: center;">
     <a class="twitter-timeline" data-lang="en" data-width="450" data-height="700" data-dnt="true" data-theme="dark"
       href="https://twitter.com/janakmallik?ref_src=twsrc%5Etfw">Tweets by janakmallik</a>
