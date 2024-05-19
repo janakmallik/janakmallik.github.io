@@ -2,7 +2,7 @@
 session_start();
 
 // Define the path to the file where session data will be stored
-$file_path = 'active_users.txt';
+$file_path = 'active_users.json';
 $timeout_duration = 300; // 5 minutes
 
 // Get the session ID
@@ -30,5 +30,5 @@ file_put_contents($file_path, json_encode($session_data));
 // Get the count of active users
 $active_users = count($session_data);
 
-echo json_encode(array('active_users' => $active_users));
+echo json_encode(['active_users' => $active_users]);
 ?>

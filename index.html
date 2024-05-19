@@ -402,7 +402,7 @@ based learnings | Managing projects | Conducting team works
 
 <script>
     function updateActiveUsers() {
-        fetch('active_user.php')
+        fetch('track_users.php')
             .then(response => response.json())
             .then(data => {
                 document.getElementById('active-users').textContent = data.active_users;
