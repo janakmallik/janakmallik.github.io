@@ -83,6 +83,8 @@
       /* color: blue; */
       text-decoration: none;
       margin-right: 20px;
+      font-size: 18px;
+      /* padding-bottom: 1px; */
     }
 
     .blue-link:hover {
@@ -110,6 +112,12 @@
         height: auto;
         /* Adjust the height value as needed */
       }
+    }
+
+    @media (max-width: 500px) {
+      .blue-link {
+      font-size: 16px;
+    }
     }
   </style>
 
@@ -163,7 +171,7 @@
 
   <div class="container" style="padding-top: 10%;">
 
-    <div class="row align-items-end">
+    <div class="row align-items-end" style="padding-bottom: 10px;">
       <div id="first_pp_div" class="col-md-3" style="cursor: pointer;">
         <!-- <img id="first_pp" src="img/jm12.jpg" alt="janak mallik" style="border-radius: 10px;"> -->
         <img id="first_pp" src="img/jm12.jpg" alt="Janak Mallik" onclick="changeImage()" style="border-radius: 10px;" onmouseover="addBorder()" onmouseout="removeBorder()">
@@ -173,7 +181,7 @@
         <text class="" style="font-size:2em;">Hi, My name is<br></text>
         <strong><span style="font-size: 3.5em; margin-bottom: 0; line-height:1em; margin:-4px 0 20px 0px">Janak
             Mallik</span></strong><br>
-        <span class="fs-4">Software Engineering Student</span>
+        <span class="fs-4">Software Engineer</span>
       </div>
     </div>
 
@@ -185,37 +193,69 @@
 
 
 
-    <!-- twitter linking button setion -->
+    <!-- twitter linking button setion
     <section class="mt-4">
       <a href="https://twitter.com/janakmallik?ref_src=twsrc%5Etfw" class="twitter-follow-button"
         data-show-count="false">Follow @janakmallik</a>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </section>
+    </section> -->
 
+    
+    <a href="https://twitter.com/janakmallik/" target="_blank" class="blue-link" title="twitter.com/janakmallik">Twitter</a>
 
-    <a href="https://github.com/janakmallik/" target="_blank" class="blue-link" title="View my GitHub">GitHub</a>
-    <a href="https://stackoverflow.com/users/17646462/" target="_blank" class="blue-link" title="View my Stack Overflow">Stack Overflow</a>
-    <!-- <a href="https://twitter.com/janakmallik/" target="_blank" class="blue-link" title="View My Twitter">Twitter</a> -->
+    <a href="https://github.com/janakmallik/" target="_blank" class="blue-link" title="github.com/janakmallik">GitHub</a>
+
+    <a href="https://stackoverflow.com/users/17646462/" target="_blank" class="blue-link" title="stackoverflow.com/users/17646462">Stack Overflow</a>
+
     <a href="https://www.linkedin.com/in/janakmallik/" target="_blank" class="blue-link"
-      title="View my LinkedIn">LinkedIn</a>
+      title="linkedin.com/in/janakmallik">LinkedIn</a>
+
+      <a href="https://mstdn.social/@janakmallik" target="_blank" class="blue-link"
+      title="mstdn.social/@janakmallik">Mastodon</a>
+
     <a href="https://www.youtube.com/@janakmallik/" target="_blank" class="blue-link"
-      title="View my YouTube">YouTube</a>
-    <a href="https://www.facebook.com/janakmallikz/" target="_blank" class="blue-link"
-      title="View my Facebook">Facebook</a>
-    <a href="https://www.instagram.com/janakmallikz/" target="_blank" class="blue-link"
-      title="View my Instagram">Instagram</a>
-    <a href="mailto:janaktoy@gmail.com" target="_blank" class="blue-link" title="Make me an E-mail">E-mail</a>
-    <a href="https://bit.ly/426yyW2" target="_blank" class="blue-link" title="My Resume"><b>My Resume </b></a>
+      title="youtube.com/@janakmallik">YouTube</a>
+
+    <!-- <a href="https://www.facebook.com/janakmallikz/" target="_blank" class="blue-link"
+      title="facebook.com/janakmallikz">Facebook</a> -->
+
+    <!-- <a href="https://www.instagram.com/janakmallikz/" target="_blank" class="blue-link"
+      title="View my Instagram">Instagram</a> -->
+
+    <a href="mailto:janaktoy@gmail.com" target="_blank" class="blue-link" title="janaktoy@gmail.com">E-mail</a>
+
+    <a href="https://bit.ly/426yyW2" target="_blank" class="blue-link" title="bit.ly/426yyW2"><b>My Resume </b></a>
+
     <!-- <a href="https://github.com/janakmallik" target="_blank" class="blue-link">GitHub</a> -->
+     <hr style="margin-top: 7px; margin-bottom: 7px;">
+
+     
+     <!-- <hr> -->
 
   </div>
 
   <!-- <div class="container">
       <iframe src="https://drive.google.com/file/d/11o25zzrQJ9q9jRA-di4A5t99JiAtZJLO/preview" width="100%" height="500" allow="autoplay"></iframe>
   </div> -->
+
+  <div id="contact" class="container mb-2">
+    <div class="row">
+      <div class="col-md-2">
+        E-mails &dash;&dash;&GT;
+      </div>
+      <div class="col">
+        <text>janaktoy@gmail.com</text><br><text>janakmallik@proton.me</text>
+        <br>
+        <a class="blue-link" href="mailto:janaktoy@gmail.com"> &dash;&dash;&GT; Send me an E-mail</a>
+      </div>
+    </div>
+    <hr style="margin-top: 7px; margin-bottom: 7px;">
+  </div>
   
   <div class="container mb-2">
     <div class="row">
+
+      
       <div class="col-md-2">
         About me &dash;&dash;&GT;
       </div>
@@ -385,19 +425,6 @@ based learnings | Managing projects | Conducting team works
         </text>
       </div>
 
-    </div>
-  </div>
-
-  <div class="container mb-2">
-    <div class="row">
-      <div class="col-md-2">
-        E-mails &dash;&dash;&GT;
-      </div>
-      <div class="col">
-        <text>janaktoy@gmail.com</text><br><text>janakmallik@proton.me</text>
-        <br><text>janakmallik10@gmail.com</text><br>
-        <a class="blue-link" href="mailto:janaktoy@gmail.com"> &dash;&dash;&GT; Send me an E-mail</a>
-      </div>
     </div>
   </div>
 
