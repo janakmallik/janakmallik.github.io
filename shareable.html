@@ -4,11 +4,16 @@
 /* Make the navbar float at the top */
 .navbar {
   position: fixed; /* This makes the navbar stick at the top */
-  top: 0; /* Align it to the top */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Sets the width to 100% of the viewport */
+  box-sizing: border-box; /* Ensures padding and borders don't add extra width */
   z-index: 1000; /* Keeps the navbar above other content */
   background-color: black; /* Optional: Set background color to avoid transparency issues */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for effect */
   padding: 10px 0; /* Padding for some breathing space */
 }
+
 
 /* Adjust the rest of the page content so it doesn't overlap */
 .container {
