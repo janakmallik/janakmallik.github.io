@@ -1,23 +1,21 @@
 <!-- navbar -->
 
 <style>
+.container {
+  max-width: 1040px; /* Sets the maximum width of the container */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding-block: 5px; /* Adds vertical padding (top and bottom) */
+  padding-inline: 20px; /* Adds horizontal padding (left and right) */
+}
 
-        .container {
-      max-width: 1040px;
-      /* Adjust the value to set the desired maximum width */
-      margin: 0 auto;
-      /* Center the container horizontally */
-      padding-block: 5px;
-      padding-inline: 20px;
-      /* Add some padding for spacing */
-    }
-/* Make the navbar float at the top */
 .navbar {
-  position: fixed; /* This makes the navbar stick at the top */
+  position: fixed; /* Sticks the navbar at the top */
   top: 0;
   left: 0;
-  width: 100vw; /* Sets the width to 100% of the viewport */
-  box-sizing: border-box; /* Ensures padding and borders don't add extra width */
+  width: 100%; /* Ensures the navbar spans the full width */
+  background-color: white; /* Sets the background color */
+  z-index: 1000; /* Keeps the navbar above other content */
+  box-sizing: border-box; /* Includes padding and border in the width calculation */
   z-index: 1000; /* Keeps the navbar above other content */
   background-color: black; /* Optional: Set background color to avoid transparency issues */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for effect */
