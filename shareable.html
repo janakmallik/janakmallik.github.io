@@ -10,9 +10,15 @@
 body.night-mode .container {
   background-color: white;
 }
+
+@media (max-width: 767px) {
+        #shadow_mobile {
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+      }
 </style>
 
-<div class="container" style="position: fixed; left: 0; right: 0; width: 100%; max-width: 1040px; margin: 0 auto; z-index: 1000;">
+<div id="shadow_mobile" class="container" style="position: fixed; left: 0; right: 0; width: 100%; max-width: 1040px; margin: 0 auto; z-index: 1000;">
     <nav class="navbar mt-2" >
       <div class="navbar-brand" style="padding: 0 0;">
         <a href="\">
@@ -42,6 +48,7 @@ body.night-mode .container {
       </ul>
     </nav>
   </div>
+  
 
   
   
