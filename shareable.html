@@ -2,67 +2,15 @@
 
 <style>
 .container {
-  max-width: 1040px;
-  margin: 0 auto;
-  padding-block: 5px;
-  padding-inline: 20px;
-  margin-top: 70px; /* Keep this */
+  background-color: #1D1E20;
 }
 
-.navbar {
-  position: fixed; /* Sticks the navbar at the top */
-  top: 0;
-  left: 0;
-  width: 100%; /* Ensures the navbar spans the full width */
-  background-color: white; /* Sets the background color */
-  z-index: 1000; /* Keeps the navbar above other content */
-  box-sizing: border-box; /* Includes padding and border in the width calculation */
-  z-index: 1000; /* Keeps the navbar above other content */
-  background-color: black; /* Optional: Set background color to avoid transparency issues */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for effect */
-  padding: 10px 0; /* Padding for some breathing space */
-}
-
-
-/* Adjust the rest of the page content so it doesn't overlap */
-.container {
-  margin-top: 70px; /* Adjust according to the height of your navbar */
-}
-
-/* Style for navbar links */
-.navbar-links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  text-align: right; /* Align the links to the right */
-}
-
-.navbar-links li {
-  display: inline;
-  margin-left: 20px; /* Spacing between links */
-}
-
-/* Optional: Additional styling */
-.navbar-links a {
-  text-decoration: none;
-}
-
-#mode-button {
-  font-weight: bold;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-body.night-mode .navbar {
+body.night-mode .container {
   background-color: white;
 }
-
-    
 </style>
 
-<div class="container">
+<div class="container" style="position: fixed; left: 0; right: 0; width: 100%; max-width: 1040px; margin: 0 auto; z-index: 1000;">
     <nav class="navbar mt-2" >
       <div class="navbar-brand" style="padding: 0 0;">
         <a href="\">
