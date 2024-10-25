@@ -11,7 +11,7 @@
   <meta name="author" content="janak mallik">
   <meta name="keywords" content="janak, mallik, janak mallik, জনক মল্লিক">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="this is a portfolio site of janak mallik includes necessary details.">
 
   <meta name="description" content="">
@@ -137,7 +137,86 @@
 <body>
 
   <!-- navbar -->
-  <div w3-include-html="shareable.html"></div>
+  <style>
+#shadow_mobile {
+  position: fixed;
+  top: 20px;
+  /* background-color: red; */
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 4px; /* Slight rounding of corners */
+}
+
+.container {
+  background-color: #1D1E20;
+}
+
+body.night-mode .container {
+  background-color: white;
+}
+
+@media (max-width: 767px) {
+        #shadow_mobile {
+          border-radius: 0; /* Slight rounding of corners */
+          top: 0;
+        }
+      }
+</style>
+
+<div id="shadow_mobile" class="container" style="left: 0; right: 0; width: 100%; max-width: 1040px; z-index: 1000;">
+    <nav class="navbar">
+      <div class="navbar-brand" style="padding: 0 0;">
+        <a href="\">
+            Janak Mallik
+        </a>
+      </div>
+      <!-- <a class="navbar-brand" href="#">Logo</a> -->
+
+      <!-- <h6>
+        <a class="navbar-brand" href="\" style="text-decoration: none;">
+          Janak Mallik
+      </a>
+      </h6> -->
+      <ul class="navbar-links">
+        <!-- <li><a href="\" style="margin-left: 0px;">Home</a></li> -->
+        
+        <li><a href="\">Home</a></li>
+        <!-- <li><a href="About_me.html">About</a></li> -->
+        <li><a href="Blogs.html">Blogs</a></li>
+        <!-- <li><a href="resume.html">Resume</a></li> -->
+        <!-- <li><a href="#contact">Contact</a></li> -->
+        <li><a target=”_blank” href="https://twitter.com/janakmallik">Twitter</a></li>
+        <!-- <li><a target=”_blank” href="https://twitter.com/janakmallik">Twitter</a></li> -->
+        <!-- <li><a href="gallery.html">Photos</a></li> -->
+        <!-- <li><button id="mode-button" onclick="toggleMode()">Dark Mode</button></li> -->
+        <button id="mode-button" onclick="toggleMode()" style="outline: none; font-weight: bold; text-decoration: none;">Day Mode</button>
+      </ul>
+    </nav>
+  </div>
+  
+  <script>
+    // Set initial previous scroll position
+    var prevScrollpos = window.pageYOffset;
+  
+    // Check if the screen width is 767px or less
+    
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        var navbar = document.getElementById("shadow_mobile");
+  
+        // Show or hide the navbar based on scroll direction
+        if (prevScrollpos > currentScrollPos) {
+          if (window.matchMedia("(max-width: 767px)").matches) {navbar.style.top = "0";} else navbar.style.top = "20px";
+        } else {
+          navbar.style.top = "-100px"; // Adjust based on navbar height
+        }
+        prevScrollpos = currentScrollPos;
+      };
+  </script>
+  
+
   <!-- 
     <button onclick="topFunction()" id="scroll_to_top_btn" title="Go to top">
       <i class="fa-solid fa-angles-up"></i>

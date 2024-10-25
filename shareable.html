@@ -3,6 +3,14 @@
 <!-- navbar -->
 
 <style>
+#shadow_mobile {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
 .container {
   background-color: #1D1E20;
 }
@@ -18,7 +26,7 @@ body.night-mode .container {
       }
 </style>
 
-<div id="shadow_mobile" class="container" style="position: fixed; left: 0; right: 0; width: 100%; max-width: 1040px; margin: 0 auto; z-index: 1000;">
+<div id="shadow_mobile" class="container" style="left: 0; right: 0; width: 100%; max-width: 1040px; margin: 0 auto; z-index: 1000;">
     <nav class="navbar mt-2" >
       <div class="navbar-brand" style="padding: 0 0;">
         <a href="\">
@@ -49,6 +57,18 @@ body.night-mode .container {
     </nav>
   </div>
   
-
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("shadow_mobile").style.top = "0";
+      } else {
+        document.getElementById("shadow_mobile").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+  
   
   
