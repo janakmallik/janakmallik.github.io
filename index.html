@@ -160,14 +160,30 @@ body.night-mode #shadow_mobile {
   background-color: rgb(241, 241, 241);
 }
 
+body.night-mode #shadow_mobile2 {
+  background-color: white;
+}
+
 @media (max-width: 767px) {
         #shadow_mobile {
           border-radius: 0; /* Slight rounding of corners */
           top: 0;
         }
       }
+
+#shadow_mobile2{
+  height: 5%;
+  background-color: #1D1E20;
+}
+
+@media (max-width: 767px) {
+        #shadow_mobile2 {
+          height: 0;
+        }
+      }
 </style>
 
+<div id="shadow_mobile2" style="position: fixed; width: 100%; z-index: 1000;"></div>
 <div id="shadow_mobile" class="container" style="left: 0; right: 0; width: 100%; max-width: 1040px; z-index: 1000;">
     <nav class="navbar">
       <div class="navbar-brand" style="padding: 0 0;">
