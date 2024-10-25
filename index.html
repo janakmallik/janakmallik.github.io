@@ -145,16 +145,17 @@
   width: 100%;
   display: block;
   transition: top 0.3s;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
   border-radius: 4px; /* Slight rounding of corners */
+  background-color: #27282b;
 }
 
-.container {
+/* .container {
   background-color: #1D1E20;
-}
+} */
 
-body.night-mode .container {
-  background-color: white;
+body.night-mode #shadow_mobile {
+  background-color: rgb(241, 241, 241);
 }
 
 @media (max-width: 767px) {
@@ -201,7 +202,7 @@ body.night-mode .container {
     var prevScrollpos = window.pageYOffset;
   
     // Check if the screen width is 767px or less
-    
+    if (window.matchMedia("(max-width: 767px)").matches){
       window.onscroll = function() {
         var currentScrollPos = window.pageYOffset;
         var navbar = document.getElementById("shadow_mobile");
@@ -213,7 +214,7 @@ body.night-mode .container {
           navbar.style.top = "-100px"; // Adjust based on navbar height
         }
         prevScrollpos = currentScrollPos;
-      };
+      };}
   </script>
   
 
