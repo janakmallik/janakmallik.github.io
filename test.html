@@ -1,8 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Janak Mallik</title>
+
     <meta charset="UTF-8" />
+    <meta
+      name="google-site-verification"
+      content="0bGTLxbS7rRbn-Ew3X0BJVIP7k7NpDpm3ppii7WoS7k"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="author" content="janak mallik" />
+    <meta
+      name="keywords"
+      content="janak, mallik, janak mallik, জনক মল্লিক, janakmallik"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="this is a portfolio site of janak mallik includes necessary details."
+    />
+
+    <meta name="description" content="" />
+
+    <!--     <meta name="og:title" property="og:title" content="portfolio of janak mallik."> -->
+    <!--     <meta name="twitter:card" content="portfolio of janak mallik."> -->
+    <!-- <meta name="google-site-verification" content="2MFWn2MPBIYEsxbbFwI4A2DbMHxpdNDGTqFkWDKTpIY" /> -->
+    <!--     <meta name="google-site-verification" content="0bGTLxbS7rRbn-Ew3X0BJVIP7k7NpDpm3ppii7WoS7k" /> -->
+
+    <!-- <meta http-equiv = "refresh" content ="0; url = not_accessible.html" /> -->
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -30,68 +58,439 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto"
     />
-    <title>My Resume</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Portfolio.css" />
+
+    <link rel="icon" type="image/x-icon" href="img/jm12.jpg" />
+    <link rel="stylesheet" href="css/scroll_to_top.css" />
+    <link rel="stylesheet" href="css/pop_up.css" />
+    <!-- <link rel="stylesheet" href="css/scrl_bar.css" /> -->
+
+    <!-- <script src="js/html_include.js"></script> -->
+
+    <style>
+      .container {
+        max-width: 1040px;
+        /* Adjust the value to set the desired maximum width */
+        margin: 0 auto;
+        /* Center the container horizontally */
+        padding-block: 5px;
+        padding-inline: 20px;
+        /* Add some padding for spacing */
+      }
+
+      .blink {
+        animation: blinker 1.5s linear infinite;
+        color: red;
+        font-family: sans-serif;
+      }
+
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      /*all blue link is also target _blank at function2.js */
+      .blue-link {
+        /* color: blue; */
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 18px;
+        /* padding-bottom: 1px; */
+      }
+
+      .blue-link:hover {
+        text-decoration: underline;
+        color: #0d6efd;
+      }
+
+      .projet-card {
+        background-color: rgb(235, 233, 232);
+        padding-bottom: 15px;
+        padding-top: 5px;
+        padding-inline: 10px;
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+      }
+
+      body.night-mode div.projet-card {
+        background-color: rgb(44, 44, 44);
+      }
+
+      /* Media query for mobile devices */
+      @media (max-width: 767px) {
+        .projet-card {
+          height: auto;
+          /* Adjust the height value as needed */
+        }
+      }
+
+      @media (max-width: 500px) {
+        .blue-link {
+          font-size: 16px;
+        }
+      }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q6NF7108SG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-Q6NF7108SG')
+    </script>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <style>
+      #shadow_mobile {
+        position: fixed;
+        top: 15px;
+        /* background-color: red; */
+        width: 100%;
+        display: block;
+        transition: top 1s linear;
+        /* transition-delay: 1s; */
+        transition-duration: 200ms;
+        /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+        border-radius: 5px; /* Slight rounding of corners */
+        background-color: rgb(241, 241, 241);
+      }
+
+      /* .container {
+  background-color: #1D1E20;
+} */
+
+      body.night-mode #shadow_mobile {
+        background-color: #27282b;
+      }
+
+      body.night-mode #shadow_mobile2 {
+        background-color: rgb(0, 0, 0);
+      }
+
+      @media (max-width: 767px) {
+        #shadow_mobile {
+          border-radius: 0; /* Slight rounding of corners */
+          top: 0;
+        }
+      }
+
+      #shadow_mobile2 {
+        height: 3%;
+        background-color: #ffffff;
+      }
+
+      @media (max-width: 767px) {
+        #shadow_mobile2 {
+          height: 0;
+        }
+      }
+    </style>
+
+    <div
+      id="shadow_mobile2"
+      style="position: fixed; width: 100%; z-index: 1000"
+    ></div>
+    <div
+      id="shadow_mobile"
+      class="container"
+      style="left: 0; right: 0; width: 100%; max-width: 1040px; z-index: 1000"
+    >
+      <nav class="navbar">
+        <div class="navbar-brand" style="padding: 0 0">
+          <a href="\"> Janak Mallik </a>
+        </div>
+        <!-- <a class="navbar-brand" href="#">Logo</a> -->
+
+        <!-- <h6>
+        <a class="navbar-brand" href="\" style="text-decoration: none;">
+          Janak Mallik
+      </a>
+      </h6> -->
+        <ul class="navbar-links">
+          <!-- <li><a href="\" style="margin-left: 0px;">Home</a></li> -->
+
+          <li><a href="\">Home</a></li>
+          <!-- <li><a href="About_me.html">About</a></li> -->
+          <li><a href="Blogs.html">Blogs</a></li>
+          <!-- <li><a href="resume.html">Resume</a></li> -->
+          <!-- <li><a href="#contact">Contact</a></li> -->
+          <li>
+            <a target="”_blank”" href="https://twitter.com/janakmallik"
+              >Twitter</a
+            >
+          </li>
+          <!-- <li><a target=”_blank” href="https://twitter.com/janakmallik">Twitter</a></li> -->
+          <!-- <li><a href="gallery.html">Photos</a></li> -->
+          <!-- <li><button id="mode-button" onclick="toggleMode()">Dark Mode</button></li> -->
+          <button
+            id="mode-button"
+            onclick="toggleMode()"
+            style="outline: none; font-weight: bold; text-decoration: none"
+          >
+            Night Mode
+          </button>
+        </ul>
+      </nav>
+    </div>
+
+    <script>
+      // Set initial previous scroll position
+      var prevScrollpos = window.pageYOffset
+
+      // Check if the screen width is 767px or less
+      if (window.matchMedia('(max-width: 767px)').matches) {
+        window.onscroll = function () {
+          var currentScrollPos = window.pageYOffset
+          var navbar = document.getElementById('shadow_mobile')
+
+          // Show or hide the navbar based on scroll direction
+          if (prevScrollpos > currentScrollPos) {
+            if (window.matchMedia('(max-width: 767px)').matches) {
+              navbar.style.top = '0'
+            } else navbar.style.top = '15px'
+          } else {
+            navbar.style.top = '-100px' // Adjust based on navbar height
+          }
+          prevScrollpos = currentScrollPos
+        }
+      }
+    </script>
+
+    <!-- 
+    <button onclick="topFunction()" id="scroll_to_top_btn" title="Go to top">
+      <i class="fa-solid fa-angles-up"></i>
+    </button> -->
+
+    <style>
+      #first_pp {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3.5px solid rgba(0, 0, 0, 0);
+        padding: 2px;
+      }
+      @media (max-width: 767px) {
+        #first_pp {
+          width: 65%;
+          /* Add any additional CSS properties here */
+        }
+      }
+
+      @media (max-width: 767px) {
+        #first_pp_div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          /* Add any additional CSS properties here */
+        }
+      }
+
+      #first_pp_divv {
+        padding-top: 10%;
+      }
+
+      @media (max-width: 767px) {
+        #first_pp_divv {
+          padding-top: 30%;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .sectionTitle {
+          font-size: 1.4rem; /* Adjust the size as needed */
+        }
+      }
+    </style>
+
+    <div id="first_pp_divv" class="container">
+      <div class="row align-items-end" style="padding-bottom: 10px">
+        <div id="first_pp_div" class="col-md-3" style="cursor: pointer">
+          <!-- <img id="first_pp" src="img/jm12.jpg" alt="janak mallik" style="border-radius: 10px;"> -->
+          <img
+            id="first_pp"
+            src="img/jm15.jpg"
+            alt="Janak Mallik"
+            onclick="changeImage()"
+            style="border-radius: 10px"
+            onmouseover="addBorder()"
+            onmouseout="removeBorder()"
+          />
+        </div>
+        <div class="col-md-9 mt-4">
+          <text class="" style="font-size: 2em">Hi, My name is<br /></text>
+          <strong
+            ><span
+              style="
+                font-size: 3.5em;
+                margin-bottom: 0;
+                line-height: 1em;
+                margin: -4px 0 20px 0px;
+              "
+              >Janak Mallik</span
+            ></strong
+          ><br />
+          <span class="fs-4">CSE graduate, interested in AI/ML</span>
+        </div>
+      </div>
+
+      <!-- <text class="" style="font-size:2em;">Hi, My name is<br></text>
+    <strong><span style="font-size: 3.5em; margin-bottom: 0; line-height:1em; margin:-4px 0 20px 0px">Janak
+        Mallik</span></strong>
+    <p class="fs-4 mb-4">Software Engineer</p> -->
+
+      <!-- twitter linking button setion
+    <section class="mt-4">
+      <a href="https://twitter.com/janakmallik?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+        data-show-count="false">Follow @janakmallik</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </section> -->
+
+      <a
+        href="https://twitter.com/janakmallik/"
+        target="_blank"
+        class="blue-link"
+        title="twitter.com/janakmallik"
+        >Twitter</a
+      >
+
+      <a
+        href="https://github.com/janakmallik/"
+        target="_blank"
+        class="blue-link"
+        title="github.com/janakmallik"
+        >GitHub</a
+      >
+
+      <a
+        href="https://stackoverflow.com/users/17646462/"
+        target="_blank"
+        class="blue-link"
+        title="stackoverflow.com/users/17646462"
+        >Stack Overflow</a
+      >
+
+      <a
+        href="https://www.linkedin.com/in/janakmallik/"
+        target="_blank"
+        class="blue-link"
+        title="linkedin.com/in/janakmallik"
+        >LinkedIn</a
+      >
+
+      <a
+        href="https://mstdn.social/@janakmallik"
+        target="_blank"
+        class="blue-link"
+        title="mstdn.social/@janakmallik"
+        >Mastodon</a
+      >
+
+      <a
+        href="https://www.youtube.com/@janakmallik/"
+        target="_blank"
+        class="blue-link"
+        title="youtube.com/@janakmallik"
+        >YouTube</a
+      >
+
+      <!-- <a href="https://www.facebook.com/janakmallikz/" target="_blank" class="blue-link"
+      title="facebook.com/janakmallikz">Facebook</a> -->
+
+      <!-- <a href="https://www.instagram.com/janakmallikz/" target="_blank" class="blue-link"
+      title="View my Instagram">Instagram</a> -->
+
+      <a
+        href="mailto:janaktoy@gmail.com"
+        target="_blank"
+        class="blue-link"
+        title="janaktoy@gmail.com"
+        >E-mail</a
+      >
+
+      <a
+        href="JANAK_MALLIK_RESUME.pdf"
+        target="_blank"
+        class="blue-link"
+        title="JANAK_MALLIK_RESUME.pdf"
+        ><b>My Resume </b></a
+      >
+
+      <!-- <a href="https://github.com/janakmallik" target="_blank" class="blue-link">GitHub</a> -->
+      <hr style="margin-top: 7px; margin-bottom: 7px" />
+
+      <!-- <hr> -->
+    </div>
 
     <style>
       .resume-container {
-        width: 100vh;
-        height: 90vh; /* Adjust the height as needed */
-        overflow: hidden; /* Hide scrollbars */
-        background-color: #f0f0f000; /* Light background color */
+        width: 100%;
+        height: 100vh; /* Adjust the height as needed */
       }
 
       iframe {
         width: 100%;
         height: 100%;
-        border: none; /* Remove iframe border */
       }
 
       /* Optional: Responsive Design */
-      @media (max-width: 768px) {
+      /* @media (max-width: 768px) {
         .resume-container {
-          height: 90vh; /* Adjust for smaller screens */
+          height: 90vh;
         }
-      }
+      } */
     </style>
-  </head>
-  <body>
-    <!-- <div class="container"> -->
-      <div class="container resume-container">
-        <iframe
-          src="Janak_Mallik_Resume.pdf"
-          title="Resume"
-          frameborder="0"
-        ></iframe>
-      </div>
-    <!-- </div> -->
 
-    <!-- <div class="container">
-        <iframe
-        src="Janak_Mallik_Resume.pdf"
-        title="Resume"
-        frameborder="0"
-      ></iframe>
-    </div> -->
+    <div class="container resume-container">
+      <iframe src="JANAK_MALLIK_RESUME.pdf" title="Resume" frameborder="0"></iframe>
+    </div>
+    <script src="script.js"></script>
 
+    <div w3-include-html="shareable_2.html"></div>
+    <script src="js/html_include.js"></script>
+    <script>
+      includeHTML()
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
 
     <script>
-      // Get the iframe and its parent container
-      const iframe = document.querySelector('iframe')
-      const container = document.querySelector('.resume-container')
-
-      // Function to adjust the iframe height to match the PDF content
-      function adjustIframeHeight() {
-        // Wait for the PDF to load completely before adjusting height
-        iframe.addEventListener('load', () => {
-          iframe.style.height =
-            iframe.contentWindow.document.body.scrollHeight + 'px'
-          container.style.height = iframe.style.height
-        })
-      }
-
-      // Adjust the height initially and on window resize
-      window.addEventListener('load', adjustIframeHeight)
-      window.addEventListener('resize', adjustIframeHeight)
+      var myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
+      myModal.toggle()
     </script>
+
+    <script src="js/function.js"></script>
+    <script src="function2.js"></script>
+    <script src="js/photo.js"></script>
+
+    <!-- <script src="js/time.js"></script> -->
   </body>
 </html>
