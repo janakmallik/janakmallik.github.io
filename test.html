@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <title>My Resume</title>
+
+    <style>
+      .resume-container {
+        width: 100vh;
+        height: 90vh; /* Adjust the height as needed */
+        overflow: hidden; /* Hide scrollbars */
+        background-color: #f0f0f000; /* Light background color */
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none; /* Remove iframe border */
+      }
+
+      /* Optional: Responsive Design */
+      @media (max-width: 768px) {
+        .resume-container {
+          height: 90vh; /* Adjust for smaller screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container"> -->
+      <div class="container resume-container">
+        <iframe
+          src="Janak_Mallik_Resume.pdf"
+          title="Resume"
+          frameborder="0"
+        ></iframe>
+      </div>
+    <!-- </div> -->
+
+    <!-- <div class="container">
+        <iframe
+        src="Janak_Mallik_Resume.pdf"
+        title="Resume"
+        frameborder="0"
+      ></iframe>
+    </div> -->
+
+
+    <script>
+      // Get the iframe and its parent container
+      const iframe = document.querySelector('iframe')
+      const container = document.querySelector('.resume-container')
+
+      // Function to adjust the iframe height to match the PDF content
+      function adjustIframeHeight() {
+        // Wait for the PDF to load completely before adjusting height
+        iframe.addEventListener('load', () => {
+          iframe.style.height =
+            iframe.contentWindow.document.body.scrollHeight + 'px'
+          container.style.height = iframe.style.height
+        })
+      }
+
+      // Adjust the height initially and on window resize
+      window.addEventListener('load', adjustIframeHeight)
+      window.addEventListener('resize', adjustIframeHeight)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+
+    <title>My Resume</title>
+    <style>
+      /* Full-page layout and responsive centering */
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      /* PDF container style */
+      .pdf-container {
+        width: 90%;
+        max-width: 800px;
+        height: 100vh; /* Full viewport height */
+        border: 2px solid #ddd;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+      }
+
+      .pdf-frame {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      /* Mobile-friendly adjustments */
+      @media (max-width: 600px) {
+        .pdf-container {
+          height: 80vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pdf-container">
+      <iframe
+        id="pdfFrame"
+        src="Janak_Mallik_Resume.pdf"
+        class="pdf-frame"
+        title="My Resume PDF"
+        onload="resizeIframe()"
+      >
+        Your browser does not support PDF viewing. Please download the PDF to
+        view it:
+        <a href="your-resume.pdf">Download Resume</a>.
+      </iframe>
+    </div>
+
+    <script>
+      function resizeIframe() {
+        const iframe = document.getElementById('pdfFrame')
+        iframe.style.height =
+          iframe.contentWindow.document.documentElement.scrollHeight + 'px'
+      }
+    </script>
+  </body>
+</html>
