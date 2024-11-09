@@ -183,7 +183,7 @@ body.night-mode #shadow_mobile2 {
       }
 </style>
 
-<div id="shadow_mobile2" style="position: fixed; width: 100%; z-index: 1000"></div>
+
 <div id="shadow_mobile" class="container" style="left: 0; right: 0; width: 100%; max-width: 1040px; z-index: 1000;">
     <nav class="navbar">
       <div class="navbar-brand" style="padding: 0 0;">
@@ -220,7 +220,7 @@ body.night-mode #shadow_mobile2 {
     var prevScrollpos = window.pageYOffset;
   
     // Check if the screen width is 767px or less
-    if (window.matchMedia("(max-width: 767px)").matches){
+    // if (window.matchMedia("(max-width: 767px)").matches){
       window.onscroll = function() {
         var currentScrollPos = window.pageYOffset;
         var navbar = document.getElementById("shadow_mobile");
@@ -233,7 +233,7 @@ body.night-mode #shadow_mobile2 {
         }
         prevScrollpos = currentScrollPos;
       };
-    }
+    // }
   </script>
   
 
