@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Left in Day</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .time-container {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .progress-container {
+            width: 80%;
+            max-width: 600px;
+            background-color: #ddd;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 30px;
+            background-color: #4caf50;
+            width: 0;
+            line-height: 30px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            transition: width 0.1s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Time Left in the Day</h1>
+    <div class="time-container">
+      <h2>Start Time: 6:0:0 AM</h2>
+        <h2>Current Time: <span id="currentTime">--:--:--</span></h2>
+        <h2>End Time: 11:59:59 PM</h2>
+    </div>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar">0%</div>
+    </div>
+
+    <script>
+        function updateProgressBar() {
+            const now = new Date();
+            const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 6, 0, 0);
+            const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
+            const totalDayTime = endOfDay - startOfDay;
+            const timeElapsed = now - startOfDay;
+            const timeRemaining = totalDayTime - timeElapsed;
+            const percentageLeft = (timeRemaining / totalDayTime) * 100;
+
+            // Update the progress bar
+            const progressBar = document.getElementById('progressBar');
+            progressBar.style.width = `${percentageLeft}%`;
+            progressBar.textContent = `${percentageLeft.toFixed(2)}% Left`;
+
+            // Update the current time display
+            const currentTimeDisplay = document.getElementById('currentTime');
+            currentTimeDisplay.textContent = now.toLocaleTimeString();
+
+            // Update every second
+            setTimeout(updateProgressBar, 1000);
+        }
+
+        // Start updating the progress bar
+        updateProgressBar();
+    </script>
+
+</body>
+</html>
