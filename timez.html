@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Left in Day</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      .time-container {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .progress-container {
+        width: 80%;
+        max-width: 600px;
+        background-color: #ddd;
+        border-radius: 20px;
+        overflow: hidden;
+        direction: rtl; /* Reverses the fill direction */
+      }
+      .progress-bar {
+        height: 30px;
+        background-color: #4caf50;
+        width: 0;
+        line-height: 30px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        transition: width 0.1s ease;
+        direction: ltr; /* Ensures text inside is not reversed */
+      }
+      .sleep-message {
+        margin-top: 10px;
+        color: #ff6347;
+        font-size: 1.1em;
+        display: none; /* Hidden by default */
+      }
+    </style>
+  </head>
+  <body>
+    <h2><span id="currentTime">--:--:--</span></h2>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar">0%</div>
+    </div>
+    <div class="sleep-message" id="sleepMessage">
+      <h2 style="color: red;">You should be asleep now! You have a full day of work ahead of you tomorrow.</h2>
+    </div>
+
+    <script>
+      function updateProgressBar() {
+        const now = new Date();
+        const startOfDay = new Date(
+          now.getFullYear(),
+          now.getMonth(),
+          now.getDate(),
+          6,
+          0,
+          0
+        );
+        const endOfDay = new Date(
+          now.getFullYear(),
+          now.getMonth(),
+          now.getDate(),
+          23,
+          59,
+          59
+        );
+        const totalDayTime = endOfDay - startOfDay;
+        const timeElapsed = now - startOfDay;
+        const progressBar = document.getElementById('progressBar');
+        const sleepMessage = document.getElementById('sleepMessage');
+
+        // Check if it's between 12 AM and 6 AM
+        if (now.getHours() >= 0 && now.getHours() < 6) {
+          progressBar.style.width = `100%`;
+          progressBar.textContent = `100% Left`;
+          sleepMessage.style.display = 'block'; // Show sleep message
+        } else {
+          const timeRemaining = totalDayTime - timeElapsed;
+          const percentageLeft = (timeRemaining / totalDayTime) * 100;
+
+          // Update the progress bar normally
+          progressBar.style.width = `${percentageLeft}%`;
+          progressBar.textContent = `${percentageLeft.toFixed(2)}% Left`;
+          sleepMessage.style.display = 'none'; // Hide sleep message
+        }
+
+        // Update the current time display
+        const currentTimeDisplay = document.getElementById('currentTime');
+        currentTimeDisplay.textContent = now.toLocaleTimeString();
+
+        // Update every second
+        setTimeout(updateProgressBar, 1000);
+      }
+
+      // Start updating the progress bar
+      updateProgressBar();
+    </script>
+  </body>
+</html>
