@@ -74,6 +74,12 @@
       padding: 15px;
       border-radius: 10px;
       margin-bottom: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .blog-item:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
     }
 
     body.night-mode .blog-item {
@@ -83,12 +89,29 @@
     .blog-date {
       color: gray;
       font-size: 0.9em;
+      margin-bottom: 8px;
     }
 
     .blog-title {
       font-size: 1.2em;
-      margin-top: 10px;
       margin-bottom: 10px;
+      color: inherit;
+    }
+
+    .blog-description {
+      font-size: 0.95em;
+      color: inherit;
+      line-height: 1.6;
+    }
+
+    .blog-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .blog-link:hover .blog-title {
+      color: #0D6EFD;
     }
 
     @media (max-width: 767px) {
@@ -212,20 +235,36 @@
       </div>
     </div>
 
-    <!-- Blog Posts -->
+    <!-- Blog Posts List -->
     <div class="row mb-5">
       <div class="col-md-12">
-        <div class="blog-item">
-          <p class="blog-date">📅 01 March 2023</p>
-          <h3 class="blog-title">
-            <a href="blogs/Revolutionizing the Way We Communicate.html" class="blue-link" style="margin-right: 0;">
+        <!-- Blog Post 1 -->
+        <a href="chatgpt-revolutionizing-communication" class="blog-link">
+          <div class="blog-item">
+            <p class="blog-date">📅 01 March 2023</p>
+            <h3 class="blog-title">
               Revolutionizing the Way We Communicate: How ChatGPT's Advanced AI Will Shape Our Future Interactions!
-            </a>
-          </h3>
-          <p style="text-align: justify; margin-bottom: 0;">
-            Explore how ChatGPT is revolutionizing communication through advanced artificial intelligence and machine learning. This blog discusses the implications of AI-powered communication tools and their impact on our future interactions.
-          </p>
-        </div>
+            </h3>
+            <p class="blog-description">
+              Explore how ChatGPT is revolutionizing communication through advanced artificial intelligence and machine learning. This blog discusses the implications of AI-powered communication tools and their impact on our future interactions.
+            </p>
+          </div>
+        </a>
+
+        <!-- Blog Post 2 (Template for next post) -->
+        <!-- 
+        <a href="your-blog-slug-here" class="blog-link">
+          <div class="blog-item">
+            <p class="blog-date">📅 DD Month YYYY</p>
+            <h3 class="blog-title">
+              Your Blog Title Here
+            </h3>
+            <p class="blog-description">
+              Brief description of your blog post.
+            </p>
+          </div>
+        </a>
+        -->
       </div>
     </div>
 
